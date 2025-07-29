@@ -3,37 +3,27 @@
   "theme": "light",
   "header": {
     "brand": {
-      "title": "ShipAny",
+      "title": "CalculatorOnline",
       "logo": {
         "src": "/logo.png",
-        "alt": "ShipAny"
+        "alt": "CalculatorOnline"
       },
       "url": "/"
     },
     "nav": {
       "items": [
         {
-          "title": "Features",
+          "title": "Calculators",
           "url": "/#feature",
-          "icon": "RiSparkling2Line"
-        },
-        {
-          "title": "Pricing",
-          "url": "/pricing",
-          "icon": "RiMoneyDollarCircleLine"
-        },
-        {
-          "title": "Showcase",
-          "url": "/showcase",
-          "icon": "RiApps2Line"
+          "icon": "RiCalculatorLine"
         }
       ]
     },
     "buttons": [
       {
-        "title": "Get ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
+        "title": "Start Calculating",
+        "url": "/",
+        "target": "_self",
         "variant": "link",
         "icon": "RiArrowRightUpLine"
       }
@@ -43,28 +33,28 @@
     "show_locale": true
   },
   "hero": {
-    "title": "Ship Any AI Startups in hours, not days",
-    "highlight_text": "Ship Any",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups.<br/>Ship Fast with a variety of templates and components.",
+    "title": "Free Online Calculators for Every Need",
+    "highlight_text": "Free Online Calculators",
+    "description": "Access 200+ professional calculators for math, finance, health, and more.<br/>Fast, accurate, and completely free to use.",
     "announcement": {
       "label": "2025",
-      "title": "🎉 Happy New Year",
-      "url": "/#pricing"
+      "title": "🧮 New Calculator Tools Added",
+      "url": "/#feature"
     },
-    "tip": "🎁 50% off before 2025",
+    "tip": "🎯 Over 1 million calculations performed daily",
     "buttons": [
       {
-        "title": "Get Started",
-        "icon": "RiFlashlightFill",
-        "url": "/#pricing",
+        "title": "Browse Calculators",
+        "icon": "RiCalculatorLine",
+        "url": "/#feature",
         "target": "_self",
         "variant": "default"
       },
       {
-        "title": "Join Discord",
-        "icon": "RiDiscordFill",
-        "url": "https://discord.gg/HQNnrzjZQS",
-        "target": "_blank",
+        "title": "Scientific Calculator",
+        "icon": "RiFunctionLine",
+        "url": "/scientific",
+        "target": "_self",
         "variant": "outline"
       }
     ],
@@ -72,255 +62,314 @@
     "show_badge": false
   },
   "branding": {
-    "title": "ShipAny is built on the shoulders of giants",
+    "title": "Trusted by Students, Professionals & Businesses",
     "items": [
       {
-        "title": "Next.js",
+        "title": "Students",
         "image": {
           "src": "/imgs/logos/nextjs.svg",
-          "alt": "Next.js"
+          "alt": "Students"
         }
       },
       {
-        "title": "React",
+        "title": "Engineers",
         "image": {
           "src": "/imgs/logos/react.svg",
-          "alt": "React"
+          "alt": "Engineers"
         }
       },
       {
-        "title": "TailwindCSS",
+        "title": "Accountants",
         "image": {
           "src": "/imgs/logos/tailwindcss.svg",
-          "alt": "TailwindCSS"
+          "alt": "Accountants"
         }
       },
       {
-        "title": "Shadcn/UI",
+        "title": "Researchers",
         "image": {
           "src": "/imgs/logos/shadcn.svg",
-          "alt": "Shadcn/UI"
+          "alt": "Researchers"
         }
       },
       {
-        "title": "Vercel",
+        "title": "Businesses",
         "image": {
           "src": "/imgs/logos/vercel.svg",
-          "alt": "Vercel"
-        }
-      }
-    ]
-  },
-  "introduce": {
-    "name": "introduce",
-    "title": "What is ShipAny",
-    "label": "Introduce",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups. Built in a variety of templates and components.",
-    "image": {
-      "src": "/imgs/features/1.png"
-    },
-    "items": [
-      {
-        "title": "Ready-to-use Templates",
-        "description": "Choose from dozens of production-ready AI SaaS templates to quickly start your project.",
-        "icon": "RiNextjsFill"
-      },
-      {
-        "title": "Infrastructure Setup",
-        "description": "Get instant access to scalable infrastructure with best practices built-in.",
-        "icon": "RiDatabase2Line"
-      },
-      {
-        "title": "Quick Deployment",
-        "description": "Deploy your AI SaaS application to production in hours, not days.",
-        "icon": "RiCloudyFill"
-      }
-    ]
-  },
-  "benefit": {
-    "name": "benefit",
-    "title": "Why Choose ShipAny",
-    "label": "Benefits",
-    "description": "Get everything you need to launch your AI startup - from ready-to-use templates to technical support.",
-    "items": [
-      {
-        "title": "Complete Framework",
-        "description": "Built on Next.js with authentication, payments, and AI integration - everything works out of the box.",
-        "icon": "RiNextjsFill",
-        "image": {
-          "src": "/imgs/features/2.png"
-        }
-      },
-      {
-        "title": "Rich Templates Library",
-        "description": "Choose from various AI SaaS templates to kickstart your project - chatbots, image generation, and more.",
-        "icon": "RiClapperboardAiLine",
-        "image": {
-          "src": "/imgs/features/3.png"
-        }
-      },
-      {
-        "title": "Technical Guidance",
-        "description": "Get dedicated support and join our developer community to ensure your successful launch.",
-        "icon": "RiCodeFill",
-        "image": {
-          "src": "/imgs/features/4.png"
-        }
-      }
-    ]
-  },
-  "usage": {
-    "name": "usage",
-    "title": "How to Launch with ShipAny",
-    "description": "Get your AI SaaS startup running in three simple steps:",
-    "image": {
-      "src": "/imgs/features/1.png"
-    },
-    "image_position": "left",
-    "text_align": "center",
-    "items": [
-      {
-        "title": "Get ShipAny",
-        "description": "Buy ShipAny with a one-time payment. Check your email for the code and documentation.",
-        "image": {
-          "src": "/imgs/features/5.png"
-        }
-      },
-      {
-        "title": "Start Your Project",
-        "description": "Read the documentation and clone the code of ShipAny. Start building your AI SaaS startup.",
-        "image": {
-          "src": "/imgs/features/6.png"
-        }
-      },
-      {
-        "title": "Customize Your Project",
-        "description": "Modify the template with your data and contents. Specific AI functionality needs.",
-        "image": {
-          "src": "/imgs/features/7.png"
-        }
-      },
-      {
-        "title": "Deploy to Production",
-        "description": "Deploy your project to production with a few steps and start serving customers immediately.",
-        "image": {
-          "src": "/imgs/features/8.png"
+          "alt": "Businesses"
         }
       }
     ]
   },
   "feature": {
     "name": "feature",
-    "title": "Key Features of ShipAny",
-    "description": "Everything you need to launch your AI SaaS startup quickly and efficiently.",
+    "title": "Calculator Categories",
+    "description": "Comprehensive calculators organized by category for easy access and maximum productivity.",
     "items": [
       {
-        "title": "Next.js Boilerplate",
-        "description": "Production-ready Next.js templates with SEO-friendly structure and i18n support.",
-        "icon": "RiNextjsFill"
+        "title": "Math & Science",
+        "description": "Scientific calculator, equation solver, matrix calculator, statistics, and advanced mathematical functions.",
+        "icon": "RiFunctionLine",
+        "children": [
+          {
+            "title": "Scientific Calculator",
+            "url": "/scientific",
+            "target": "_self"
+          },
+          {
+            "title": "Graphing Calculator",
+            "url": "/graphing",
+            "target": "_self"
+          },
+          {
+            "title": "Equation Solver",
+            "url": "/equation-solver",
+            "target": "_self"
+          },
+          {
+            "title": "Matrix Calculator",
+            "url": "/matrix",
+            "target": "_self"
+          },
+          {
+            "title": "Statistics Calculator",
+            "url": "/statistics",
+            "target": "_self"
+          }
+        ]
       },
       {
-        "title": "Authentication & Payments",
-        "description": "Integrated Google OAuth, one-tap login, and Stripe payment processing.",
-        "icon": "RiKey2Fill"
+        "title": "Financial Planning",
+        "description": "Mortgage calculator, loan calculator, investment returns, tax calculator, and retirement planning tools.",
+        "icon": "RiMoneyDollarCircleLine",
+        "children": [
+          {
+            "title": "Mortgage Calculator",
+            "url": "/mortgage",
+            "target": "_self"
+          },
+          {
+            "title": "Loan Calculator",
+            "url": "/loan",
+            "target": "_self"
+          },
+          {
+            "title": "Investment Calculator",
+            "url": "/investment",
+            "target": "_self"
+          },
+          {
+            "title": "Tax Calculator",
+            "url": "/tax",
+            "target": "_self"
+          },
+          {
+            "title": "Retirement Calculator",
+            "url": "/retirement",
+            "target": "_self"
+          },
+          {
+            "title": "Compound Interest",
+            "url": "/compound-interest",
+            "target": "_self"
+          }
+        ]
       },
       {
-        "title": "Data Infrastructure",
-        "description": "Built-in Supabase integration for reliable and scalable data storage.",
-        "icon": "RiDatabase2Line"
+        "title": "Health & Fitness",
+        "description": "BMI calculator, calorie calculator, pregnancy calculator, body fat percentage, and fitness tracking.",
+        "icon": "RiHeartPulseLine",
+        "children": [
+          {
+            "title": "BMI Calculator",
+            "url": "/bmi",
+            "target": "_self"
+          },
+          {
+            "title": "Calorie Calculator",
+            "url": "/calorie",
+            "target": "_self"
+          },
+          {
+            "title": "Body Fat Calculator",
+            "url": "/body-fat",
+            "target": "_self"
+          },
+          {
+            "title": "Pregnancy Calculator",
+            "url": "/pregnancy",
+            "target": "_self"
+          }
+        ]
       },
       {
-        "title": "One-Click Deployment",
-        "description": "Seamless deployment to Vercel or Cloudflare with automated setup.",
-        "icon": "RiCloudy2Fill"
+        "title": "Unit Conversions",
+        "description": "Convert between different units of measurement - length, weight, temperature, currency, and more.",
+        "icon": "RiExchangeLine",
+        "children": [
+          {
+            "title": "Length Converter",
+            "url": "/length-converter",
+            "target": "_self"
+          },
+          {
+            "title": "Weight Converter",
+            "url": "/weight-converter",
+            "target": "_self"
+          },
+          {
+            "title": "Temperature Converter",
+            "url": "/temperature-converter",
+            "target": "_self"
+          },
+          {
+            "title": "Currency Converter",
+            "url": "/currency-converter",
+            "target": "_self"
+          },
+          {
+            "title": "Area Converter",
+            "url": "/area-converter",
+            "target": "_self"
+          }
+        ]
       },
       {
-        "title": "Business Analytics",
-        "description": "Integrated Google Analytics and Search Console for tracking growth.",
-        "icon": "RiBarChart2Line"
+        "title": "Date & Time",
+        "description": "Age calculator, date difference, time zone converter, and business day calculator for scheduling.",
+        "icon": "RiCalendarLine",
+        "children": [
+          {
+            "title": "Age Calculator",
+            "url": "/age-calculator",
+            "target": "_self"
+          },
+          {
+            "title": "Date Difference",
+            "url": "/date-difference",
+            "target": "_self"
+          },
+          {
+            "title": "Time Zone Converter",
+            "url": "/timezone-converter",
+            "target": "_self"
+          }
+        ]
       },
       {
-        "title": "AI-Ready Infrastructure",
-        "description": "Pre-configured AI integration with built-in credits system and API sales.",
-        "icon": "RiRobot2Line"
+        "title": "Specialized Tools",
+        "description": "GPA calculator, grade calculator, tip calculator, password generator, and other utility calculators.",
+        "icon": "RiToolsLine",
+        "children": [
+          {
+            "title": "GPA Calculator",
+            "url": "/gpa-calculator",
+            "target": "_self"
+          },
+          {
+            "title": "Grade Calculator",
+            "url": "/grade-calculator",
+            "target": "_self"
+          },
+          {
+            "title": "Tip Calculator",
+            "url": "/tip-calculator",
+            "target": "_self"
+          },
+          {
+            "title": "Password Generator",
+            "url": "/password-generator",
+            "target": "_self"
+          },
+          {
+            "title": "Random Number Generator",
+            "url": "/random-number",
+            "target": "_self"
+          },
+          {
+            "title": "Percentage Calculator",
+            "url": "/percentage",
+            "target": "_self"
+          }
+        ]
       }
     ]
   },
   "stats": {
     "name": "stats",
     "label": "Stats",
-    "title": "People Love ShipAny",
-    "description": "for it's easy to use and fast to ship.",
+    "title": "Trusted Worldwide",
+    "description": "for accurate and reliable calculations.",
     "icon": "FaRegHeart",
     "items": [
       {
-        "title": "Trusted by",
-        "label": "99+",
-        "description": "Customers"
+        "title": "Daily Users",
+        "label": "50K+",
+        "description": "Active Users"
       },
       {
-        "title": "Built in",
-        "label": "20+",
-        "description": "Components"
+        "title": "Calculators",
+        "label": "200+",
+        "description": "Available Tools"
       },
       {
-        "title": "Ship Fast in",
-        "label": "5",
-        "description": "Minutes"
+        "title": "Calculations",
+        "label": "1M+",
+        "description": "Per Day"
       }
     ]
   },
   "testimonial": {
     "name": "testimonial",
     "label": "Testimonial",
-    "title": "What Users Say About ShipAny",
-    "description": "Hear from developers and founders who launched their AI startups with ShipAny.",
+    "title": "What Users Say About CalculatorOnline",
+    "description": "Hear from students, professionals, and businesses who rely on our calculators daily.",
     "icon": "GoThumbsup",
     "items": [
       {
-        "title": "David Chen",
-        "label": "Founder of AIWallpaper.shop",
-        "description": "ShipAny saved us months of development time. We launched our AI wallpaper business in just 2 days and got our first paying customer within a week!",
+        "title": "Sarah Johnson",
+        "label": "Mathematics Teacher",
+        "description": "CalculatorOnline has become an essential tool in my classroom. The scientific calculator and equation solver help my students understand complex mathematical concepts better.",
         "image": {
           "src": "/imgs/users/1.png"
         }
       },
       {
-        "title": "Rachel Kim",
-        "label": "CTO at HeyBeauty.ai",
-        "description": "The pre-built AI infrastructure is a game-changer. We didn't have to worry about architecture - just focused on our AI beauty tech and went live fast.",
+        "title": "Michael Chen",
+        "label": "Financial Advisor",
+        "description": "The mortgage and investment calculators are incredibly accurate and save me hours of manual calculations. My clients love the instant results and clear explanations.",
         "image": {
           "src": "/imgs/users/2.png"
         }
       },
       {
-        "title": "Marcus Thompson",
-        "label": "Solo Developer",
-        "description": "As a solo developer, ShipAny gave me everything I needed - auth, payments, AI integration, and beautiful UI. Launched my SaaS in a weekend!",
+        "title": "Dr. Lisa Rodriguez",
+        "label": "Healthcare Professional",
+        "description": "The BMI and calorie calculators are perfect for patient consultations. The mobile-friendly design lets me access them anywhere in the clinic.",
         "image": {
           "src": "/imgs/users/3.png"
         }
       },
       {
-        "title": "Sofia Garcia",
-        "label": "CEO of Melodisco",
-        "description": "The templates are production-ready and highly customizable. We built our AI music platform in hours instead of months. Incredible time-to-market!",
+        "title": "James Wilson",
+        "label": "Engineering Student",
+        "description": "From basic arithmetic to complex engineering calculations, this site has everything I need. The step-by-step solutions really help me learn.",
         "image": {
           "src": "/imgs/users/4.png"
         }
       },
       {
-        "title": "James Wilson",
-        "label": "Tech Lead at GPTs.works",
-        "description": "ShipAny's infrastructure is rock-solid. We scaled from 0 to 10k users without touching the backend. Best investment for our AI startup.",
+        "title": "Emily Davis",
+        "label": "Small Business Owner",
+        "description": "The tax and loan calculators help me make informed financial decisions for my business. Fast, reliable, and completely free!",
         "image": {
           "src": "/imgs/users/5.png"
         }
       },
       {
-        "title": "Anna Zhang",
-        "label": "Startup Founder",
-        "description": "From idea to launch in 3 days! ShipAny's templates and deployment tools made it possible to test our AI business concept incredibly fast.",
+        "title": "Robert Kim",
+        "label": "Fitness Enthusiast",
+        "description": "The health calculators keep me on track with my fitness goals. The calorie and BMI calculators are especially useful for my workout routine.",
         "image": {
           "src": "/imgs/users/6.png"
         }
@@ -330,50 +379,50 @@
   "faq": {
     "name": "faq",
     "label": "FAQ",
-    "title": "Frequently Asked Questions About ShipAny",
-    "description": "Have another question? Contact us on Discord or by email.",
+    "title": "Frequently Asked Questions",
+    "description": "Have another question? Contact us by email for quick support.",
     "items": [
       {
-        "title": "What exactly is ShipAny and how does it work?",
-        "description": "ShipAny is a comprehensive NextJS boilerplate designed specifically for building AI SaaS startups. It provides ready-to-use templates, infrastructure setup, and deployment tools that help you launch your AI business in hours instead of days."
+        "title": "Are all calculators completely free to use?",
+        "description": "Yes! All our calculators are 100% free with no hidden fees, registration requirements, or usage limits. You can perform unlimited calculations on any of our tools."
       },
       {
-        "title": "Do I need advanced technical skills to use ShipAny?",
-        "description": "While basic programming knowledge is helpful, ShipAny is designed to be developer-friendly. Our templates and documentation make it easy to get started, even if you're not an expert in AI or cloud infrastructure."
+        "title": "How accurate are the calculations?",
+        "description": "Our calculators use industry-standard formulas and algorithms. Each calculator is thoroughly tested for accuracy, but we recommend consulting professionals for critical financial or medical decisions."
       },
       {
-        "title": "What types of AI SaaS can I build with ShipAny?",
-        "description": "ShipAny supports a wide range of AI applications, from content generation to data analysis tools. Our templates cover popular use cases like AI chatbots, content generators, image processing apps, and more."
+        "title": "Can I use these calculators on mobile devices?",
+        "description": "Absolutely! All our calculators are fully responsive and optimized for mobile devices, tablets, and desktop computers. You can access them anywhere with an internet connection."
       },
       {
-        "title": "How long does it typically take to launch with ShipAny?",
-        "description": "With ShipAny, you can have a working prototype in hours and a production-ready application in hours. Our one-click deployment and pre-configured infrastructure significantly reduce the traditional months-long development cycle."
+        "title": "Do you store my calculation data?",
+        "description": "No, we don't store your personal calculation data. All calculations are performed locally in your browser for privacy and security. We only collect anonymous usage statistics."
       },
       {
-        "title": "What's included in the ShipAny infrastructure?",
-        "description": "ShipAny provides a complete infrastructure stack including authentication, database setup, API integration, payment processing, and scalable cloud deployment. Everything is pre-configured following industry best practices."
+        "title": "How often do you add new calculators?",
+        "description": "We regularly add new calculators based on user requests and emerging needs. Follow us on social media or check back frequently to discover new tools."
       },
       {
-        "title": "Can I customize the templates to match my brand?",
-        "description": "Absolutely! All ShipAny templates are fully customizable. You can modify the design, features, and functionality to match your brand identity and specific business requirements while maintaining the robust underlying infrastructure."
+        "title": "Can I suggest a new calculator?",
+        "description": "Yes! We welcome suggestions for new calculators. Contact us with your ideas, and we'll consider adding them to our growing collection of tools."
       }
     ]
   },
   "cta": {
     "name": "cta",
-    "title": "Ship your first AI SaaS Startup",
-    "description": "Start from here, ship with ShipAny.",
+    "title": "Start Calculating Today",
+    "description": "Access 200+ free calculators for all your mathematical needs.",
     "buttons": [
       {
-        "title": "Get ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
-        "icon": "GoArrowUpRight"
+        "title": "Browse All Calculators",
+        "url": "/#feature",
+        "target": "_self",
+        "icon": "RiCalculatorLine"
       },
       {
-        "title": "Read Document",
-        "url": "https://docs.shipany.ai",
-        "target": "_blank",
+        "title": "Scientific Calculator",
+        "url": "/scientific",
+        "target": "_self",
         "variant": "outline"
       }
     ]
@@ -381,33 +430,53 @@
   "footer": {
     "name": "footer",
     "brand": {
-      "title": "ShipAny",
-      "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups. Ship Fast with a variety of templates and components.",
+      "title": "CalculatorOnline",
+      "description": "Your comprehensive online calculator platform offering 200+ specialized calculators for mathematics, finance, health, and daily calculations.",
       "logo": {
         "src": "/logo.png",
-        "alt": "ShipAny"
+        "alt": "CalculatorOnline"
       },
       "url": "/"
     },
-    "copyright": "© 2025 • ShipAny All rights reserved.",
+    "copyright": "© 2025 • CalculatorOnline All rights reserved.",
     "nav": {
       "items": [
         {
-          "title": "About",
+          "title": "Categories",
           "children": [
             {
-              "title": "Features",
-              "url": "/#feature",
+              "title": "Math Calculators",
+              "url": "/math",
               "target": "_self"
             },
             {
-              "title": "Showcases",
-              "url": "/#showcase",
+              "title": "Financial Calculators",
+              "url": "/finance",
               "target": "_self"
             },
             {
-              "title": "Pricing",
-              "url": "/#pricing",
+              "title": "Health Calculators",
+              "url": "/health",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Popular Tools",
+          "children": [
+            {
+              "title": "Scientific Calculator",
+              "url": "/scientific",
+              "target": "_self"
+            },
+            {
+              "title": "Mortgage Calculator",
+              "url": "/mortgage",
+              "target": "_self"
+            },
+            {
+              "title": "BMI Calculator",
+              "url": "/bmi",
               "target": "_self"
             }
           ]
@@ -416,39 +485,19 @@
           "title": "Resources",
           "children": [
             {
-              "title": "Documents",
-              "url": "https://docs.shipany.ai",
-              "target": "_blank"
+              "title": "How to Use",
+              "url": "/help",
+              "target": "_self"
             },
             {
-              "title": "Components",
-              "url": "https://shipany.ai/components",
-              "target": "_blank"
+              "title": "Calculator List",
+              "url": "/all-calculators",
+              "target": "_self"
             },
             {
-              "title": "Templates",
-              "url": "https://shipany.ai/templates",
-              "target": "_blank"
-            }
-          ]
-        },
-        {
-          "title": "Friends",
-          "children": [
-            {
-              "title": "ThinkAny",
-              "url": "https://thinkany.ai",
-              "target": "_blank"
-            },
-            {
-              "title": "HeyBeauty",
-              "url": "https://heybeauty.ai",
-              "target": "_blank"
-            },
-            {
-              "title": "Pagen",
-              "url": "https://pagen.so",
-              "target": "_blank"
+              "title": "Contact Us",
+              "url": "/contact",
+              "target": "_self"
             }
           ]
         }
@@ -459,25 +508,25 @@
         {
           "title": "X",
           "icon": "RiTwitterXFill",
-          "url": "https://x.com/shipanyai",
+          "url": "https://x.com/Lee007521",
           "target": "_blank"
         },
         {
           "title": "Github",
           "icon": "RiGithubFill",
-          "url": "https://github.com/shipanyai",
+          "url": "https://github.com/calculatoronline",
           "target": "_blank"
         },
         {
-          "title": "Discord",
-          "icon": "RiDiscordFill",
-          "url": "https://discord.gg/HQNnrzjZQS",
+          "title": "Facebook",
+          "icon": "RiFacebookFill",
+          "url": "https://facebook.com/calculatoronline",
           "target": "_blank"
         },
         {
           "title": "Email",
           "icon": "RiMailLine",
-          "url": "mailto:support@shipany.ai",
+          "url": "mailto:support@calculatoronline.online",
           "target": "_self"
         }
       ]

@@ -1,0 +1,129 @@
+{
+  "seo": {
+    "title": "Mortgage Calculator - Free Online Mortgage Calculator",
+    "description": "Free mortgage calculator to estimate monthly payments, total interest, and loan costs. Calculate your mortgage payment with property tax, insurance, and PMI.",
+    "keywords": "mortgage calculator, home loan calculator, monthly payment calculator, mortgage payment, loan calculator"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "calculators": "Calculators",
+    "current": "Mortgage Calculator"
+  },
+  "header": {
+    "title": "Mortgage Calculator",
+    "description": "Calculate your monthly mortgage payment, total interest, and loan costs. Includes property tax, insurance, and PMI calculations for accurate estimates."
+  },
+  "calculator": {
+    "title": "Mortgage Calculator",
+    "description": "Enter your loan details to calculate monthly payments and total costs"
+  },
+  "sidebar": {
+    "quickActions": {
+      "title": "Quick Actions",
+      "loan": "Loan Calculator",
+      "amortization": "Amortization Schedule",
+      "allCalculators": "All Calculators"
+    },
+    "relatedCalculators": {
+      "title": "Related Calculators",
+      "items": [
+        {
+          "title": "Loan Calculator",
+          "url": "/loan",
+          "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "Amortization Schedule",
+          "url": "/amortization",
+          "icon": "RiTableLine"
+        },
+        {
+          "title": "Interest Calculator",
+          "url": "/interest",
+          "icon": "RiPercentLine"
+        },
+        {
+          "title": "Payment Calculator",
+          "url": "/payment",
+          "icon": "RiCalculatorLine"
+        },
+        {
+          "title": "Refinance Calculator",
+          "url": "/refinance",
+          "icon": "RiExchangeLine"
+        }
+      ]
+    },
+    "features": {
+      "title": "Calculator Features",
+      "items": [
+        "Monthly payment calculation",
+        "Total interest and payment breakdown",
+        "Property tax and insurance inclusion",
+        "PMI calculation for low down payments",
+        "Loan-to-value ratio analysis",
+        "Real-time calculations"
+      ]
+    }
+  },
+  "howToUse": {
+    "title": "How to Use the Mortgage Calculator",
+    "inputFields": {
+      "title": "Input Fields",
+      "items": [
+        "Enter the total loan amount you want to borrow",
+        "Input the annual interest rate as a percentage",
+        "Select the loan term (15 or 30 years, or custom)",
+        "Specify your down payment amount",
+        "Add annual property tax and insurance costs",
+        "Include PMI if your down payment is less than 20%"
+      ]
+    },
+    "calculations": {
+      "title": "Calculations",
+      "items": [
+        {
+          "type": "Monthly Payment",
+          "description": "Principal and interest payment using the standard mortgage formula"
+        },
+        {
+          "type": "Total Payment",
+          "description": "Sum of all monthly payments over the loan term"
+        },
+        {
+          "type": "Total Interest",
+          "description": "Total interest paid over the life of the loan"
+        },
+        {
+          "type": "Loan-to-Value Ratio",
+          "description": "Percentage of the property value that is financed"
+        }
+      ]
+    },
+    "tips": {
+      "title": "Tips for Accurate Calculations",
+      "items": [
+        "Use current market interest rates for realistic estimates",
+        "Include all property taxes and insurance costs",
+        "Consider PMI if your down payment is less than 20%",
+        "Factor in closing costs and other fees",
+        "Compare different loan terms to find the best option"
+      ]
+    }
+  },
+  "mortgagePrinciples": {
+    "title": "Mortgage Principles",
+    "monthlyPayment": {
+      "title": "Monthly Payment Formula",
+      "description": "The monthly mortgage payment is calculated using the standard mortgage formula: M = P[r(1+r)^n]/[(1+r)^n-1], where M is the monthly payment, P is the principal amount, r is the monthly interest rate, and n is the total number of payments."
+    },
+    "interest": {
+      "title": "Interest and Principal",
+      "description": "In the early years of a mortgage, most of your payment goes toward interest. As the loan progresses, more of your payment goes toward the principal. This is called amortization."
+    },
+    "amortization": {
+      "title": "Amortization Schedule",
+      "description": "An amortization schedule shows how each payment is split between principal and interest. Early payments are mostly interest, while later payments are mostly principal. This affects the total interest paid over the life of the loan."
+    }
+  }
+} 

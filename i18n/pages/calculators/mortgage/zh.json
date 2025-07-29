@@ -1,0 +1,129 @@
+{
+  "seo": {
+    "title": "房贷计算器 - 免费在线房贷计算器",
+    "description": "免费房贷计算器，估算月供、总利息和贷款成本。计算包含房产税、保险和PMI的房贷还款。",
+    "keywords": "房贷计算器, 房屋贷款计算器, 月供计算器, 房贷还款, 贷款计算器"
+  },
+  "breadcrumb": {
+    "home": "首页",
+    "calculators": "计算器",
+    "current": "房贷计算器"
+  },
+  "header": {
+    "title": "房贷计算器",
+    "description": "计算您的月供、总利息和贷款成本。包含房产税、保险和PMI计算，提供准确的估算。"
+  },
+  "calculator": {
+    "title": "房贷计算器",
+    "description": "输入贷款详情以计算月供和总成本"
+  },
+  "sidebar": {
+    "quickActions": {
+      "title": "快速操作",
+      "loan": "贷款计算器",
+      "amortization": "还款计划表",
+      "allCalculators": "所有计算器"
+    },
+    "relatedCalculators": {
+      "title": "相关计算器",
+      "items": [
+        {
+          "title": "贷款计算器",
+          "url": "/loan",
+          "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "还款计划表",
+          "url": "/amortization",
+          "icon": "RiTableLine"
+        },
+        {
+          "title": "利息计算器",
+          "url": "/interest",
+          "icon": "RiPercentLine"
+        },
+        {
+          "title": "还款计算器",
+          "url": "/payment",
+          "icon": "RiCalculatorLine"
+        },
+        {
+          "title": "再融资计算器",
+          "url": "/refinance",
+          "icon": "RiExchangeLine"
+        }
+      ]
+    },
+    "features": {
+      "title": "计算器特性",
+      "items": [
+        "月供计算",
+        "总利息和还款明细",
+        "包含房产税和保险",
+        "低首付的PMI计算",
+        "贷款价值比分析",
+        "实时计算"
+      ]
+    }
+  },
+  "howToUse": {
+    "title": "如何使用房贷计算器",
+    "inputFields": {
+      "title": "输入字段",
+      "items": [
+        "输入您想要借款的总贷款金额",
+        "输入年利率百分比",
+        "选择贷款期限（15年或30年，或自定义）",
+        "指定您的首付金额",
+        "添加年房产税和保险费用",
+        "如果首付少于20%，包含PMI"
+      ]
+    },
+    "calculations": {
+      "title": "计算",
+      "items": [
+        {
+          "type": "月供",
+          "description": "使用标准房贷公式计算的本金和利息还款"
+        },
+        {
+          "type": "总还款",
+          "description": "贷款期限内所有月供的总和"
+        },
+        {
+          "type": "总利息",
+          "description": "贷款期间支付的总利息"
+        },
+        {
+          "type": "贷款价值比",
+          "description": "房产价值中被融资的百分比"
+        }
+      ]
+    },
+    "tips": {
+      "title": "准确计算的提示",
+      "items": [
+        "使用当前市场利率进行 realistic 估算",
+        "包含所有房产税和保险费用",
+        "如果首付少于20%，考虑PMI",
+        "考虑过户费用和其他费用",
+        "比较不同贷款期限以找到最佳选择"
+      ]
+    }
+  },
+  "mortgagePrinciples": {
+    "title": "房贷原理",
+    "monthlyPayment": {
+      "title": "月供公式",
+      "description": "月供使用标准房贷公式计算：M = P[r(1+r)^n]/[(1+r)^n-1]，其中M是月供，P是本金金额，r是月利率，n是总还款次数。"
+    },
+    "interest": {
+      "title": "利息和本金",
+      "description": "在房贷的早期，大部分还款用于支付利息。随着贷款进展，更多还款用于本金。这称为分期偿还。"
+    },
+    "amortization": {
+      "title": "分期偿还计划",
+      "description": "分期偿还计划显示每次还款如何在本金和利息之间分配。早期还款主要是利息，后期还款主要是本金。这影响贷款期间支付的总利息。"
+    }
+  }
+} 

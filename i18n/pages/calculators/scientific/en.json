@@ -1,0 +1,143 @@
+{
+  "seo": {
+    "title": "Scientific Calculator - Free Online Calculator",
+    "description": "Free scientific calculator with advanced mathematical functions including trigonometry, logarithms, exponents, and more. Perfect for students and professionals.",
+    "keywords": "scientific calculator, math calculator, trigonometry, logarithm, exponent, online calculator"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "calculators": "Calculators", 
+    "current": "Scientific Calculator"
+  },
+  "header": {
+    "title": "Scientific Calculator",
+    "description": "Advanced scientific calculator with trigonometric, logarithmic, and exponential functions. Perfect for complex mathematical calculations, homework, and professional work."
+  },
+  "calculator": {
+    "title": "Scientific Calculator",
+    "description": "Click buttons or use your keyboard to perform calculations"
+  },
+  "sidebar": {
+    "quickActions": {
+      "title": "Quick Actions",
+      "graphing": "Graphing Calculator",
+      "matrix": "Matrix Calculator", 
+      "allCalculators": "All Calculators"
+    },
+    "relatedCalculators": {
+      "title": "Related Calculators",
+      "items": [
+        {
+          "title": "Graphing Calculator",
+          "url": "/graphing",
+          "icon": "RiLineChartLine"
+        },
+        {
+          "title": "Matrix Calculator", 
+          "url": "/matrix",
+          "icon": "RiGridLine"
+        },
+        {
+          "title": "Equation Solver",
+          "url": "/equation-solver", 
+          "icon": "RiFunctionLine"
+        },
+        {
+          "title": "Statistics Calculator",
+          "url": "/statistics",
+          "icon": "RiBarChartLine"
+        },
+        {
+          "title": "Percentage Calculator",
+          "url": "/percentage",
+          "icon": "RiPercentLine"
+        }
+      ]
+    },
+    "features": {
+      "title": "Calculator Features",
+      "items": [
+        "Advanced mathematical functions",
+        "Keyboard and mouse support", 
+        "Memory functions (M+, M-, MR, MC)",
+        "History of calculations",
+        "Copy results to clipboard"
+      ]
+    }
+  },
+  "howToUse": {
+    "title": "How to Use the Scientific Calculator",
+    "basicOperations": {
+      "title": "Basic Operations",
+      "items": [
+        "Use number buttons (0-9) to enter numbers",
+        "Click +, -, ×, ÷ for basic arithmetic operations", 
+        "Press = or Enter to calculate results",
+        "Use C to clear the current entry, AC to clear all"
+      ]
+    },
+    "advancedFunctions": {
+      "title": "Advanced Functions",
+      "items": [
+        {
+          "functions": "sin, cos, tan",
+          "description": "Trigonometric functions (input in degrees)"
+        },
+        {
+          "functions": "ln, log", 
+          "description": "Natural logarithm and base-10 logarithm"
+        },
+        {
+          "functions": "x²",
+          "description": "Square function"
+        },
+        {
+          "functions": "√",
+          "description": "Square root function"
+        },
+        {
+          "functions": "xʸ",
+          "description": "Power function (x raised to the power of y)"
+        },
+        {
+          "functions": "π",
+          "description": "Pi constant (3.14159...)"
+        },
+        {
+          "functions": "e", 
+          "description": "Euler's number (2.71828...)"
+        }
+      ]
+    },
+    "keyboardShortcuts": {
+      "title": "Keyboard Shortcuts",
+      "left": {
+        "numbers": "Numbers: 0-9",
+        "operations": "Operations: +, -, *, /",
+        "decimal": "Decimal: . (period)",
+        "calculate": "Calculate: Enter or ="
+      },
+      "right": {
+        "clear": "Clear: C or Delete", 
+        "clearAll": "Clear All: Escape",
+        "parentheses": "Parentheses: ( and )",
+        "pi": "Pi: p"
+      }
+    }
+  },
+  "mathematicalPrinciples": {
+    "title": "Mathematical Principles",
+    "trigonometric": {
+      "title": "Trigonometric Functions",
+      "description": "Trigonometric functions relate angles to the ratios of sides in right triangles. Our calculator uses degrees by default. Sin(θ) gives the ratio of opposite to hypotenuse, cos(θ) gives adjacent to hypotenuse, and tan(θ) gives opposite to adjacent."
+    },
+    "logarithmic": {
+      "title": "Logarithmic Functions", 
+      "description": "Logarithms are the inverse of exponential functions. The natural logarithm (ln) uses base e, while the common logarithm (log) uses base 10. For example, if 10² = 100, then log(100) = 2."
+    },
+    "orderOfOperations": {
+      "title": "Order of Operations",
+      "description": "The calculator follows the standard order of operations (PEMDAS/BODMAS): Parentheses/Brackets, Exponents/Orders, Multiplication and Division (left to right), Addition and Subtraction (left to right)."
+    }
+  }
+} 

@@ -1,0 +1,143 @@
+{
+  "seo": {
+    "title": "科学计算器 - 免费在线计算器",
+    "description": "免费科学计算器，支持三角函数、对数、指数等高级数学功能。适合学生和专业人士使用。",
+    "keywords": "科学计算器, 数学计算器, 三角函数, 对数, 指数, 在线计算器"
+  },
+  "breadcrumb": { 
+    "home": "首页",
+    "calculators": "计算器",
+    "current": "科学计算器"
+  },
+  "header": {
+    "title": "科学计算器",
+    "description": "高级科学计算器，具备三角函数、对数函数和指数函数。适用于复杂数学计算、作业和专业工作。"
+  },
+  "calculator": {
+    "title": "科学计算器", 
+    "description": "点击按钮或使用键盘进行计算"
+  },
+  "sidebar": {
+    "quickActions": {
+      "title": "快速操作",
+      "graphing": "图形计算器",
+      "matrix": "矩阵计算器",
+      "allCalculators": "所有计算器"
+    },
+    "relatedCalculators": {
+      "title": "相关计算器",
+      "items": [
+        {
+          "title": "图形计算器",
+          "url": "/graphing", 
+          "icon": "RiLineChartLine"
+        },
+        {
+          "title": "矩阵计算器",
+          "url": "/matrix",
+          "icon": "RiGridLine"
+        },
+        {
+          "title": "方程求解器",
+          "url": "/equation-solver",
+          "icon": "RiFunctionLine"
+        },
+        {
+          "title": "统计计算器", 
+          "url": "/statistics",
+          "icon": "RiBarChartLine"
+        },
+        {
+          "title": "百分比计算器",
+          "url": "/percentage",
+          "icon": "RiPercentLine"
+        }
+      ]
+    },
+    "features": {
+      "title": "计算器特性",
+      "items": [
+        "高级数学函数",
+        "键盘和鼠标支持",
+        "存储功能 (M+, M-, MR, MC)", 
+        "计算历史记录",
+        "结果复制到剪贴板"
+      ]
+    }
+  },
+  "howToUse": {
+    "title": "如何使用科学计算器",
+    "basicOperations": {
+      "title": "基本操作",
+      "items": [
+        "使用数字按钮 (0-9) 输入数字",
+        "点击 +、-、×、÷ 进行基本算术运算",
+        "按 = 或 Enter 键计算结果",
+        "使用 C 清除当前输入，AC 全部清除"
+      ]
+    },
+    "advancedFunctions": {
+      "title": "高级函数",
+      "items": [
+        {
+          "functions": "sin, cos, tan",
+          "description": "三角函数（输入角度制）"
+        },
+        {
+          "functions": "ln, log",
+          "description": "自然对数和常用对数"
+        },
+        {
+          "functions": "x²", 
+          "description": "平方函数"
+        },
+        {
+          "functions": "√",
+          "description": "平方根函数"
+        },
+        {
+          "functions": "xʸ",
+          "description": "幂函数（x的y次方）"
+        },
+        {
+          "functions": "π",
+          "description": "圆周率常数 (3.14159...)"
+        },
+        {
+          "functions": "e",
+          "description": "欧拉数 (2.71828...)"
+        }
+      ]
+    },
+    "keyboardShortcuts": {
+      "title": "键盘快捷键",
+      "left": {
+        "numbers": "数字：0-9",
+        "operations": "运算：+, -, *, /",
+        "decimal": "小数点：. （句号）",
+        "calculate": "计算：Enter 或 ="
+      },
+      "right": {
+        "clear": "清除：C 或 Delete",
+        "clearAll": "全部清除：Escape", 
+        "parentheses": "括号：( 和 )",
+        "pi": "圆周率：p"
+      }
+    }
+  },
+  "mathematicalPrinciples": {
+    "title": "数学原理",
+    "trigonometric": {
+      "title": "三角函数",
+      "description": "三角函数将角度与直角三角形边的比值联系起来。我们的计算器默认使用角度制。sin(θ) 表示对边与斜边的比值，cos(θ) 表示邻边与斜边的比值，tan(θ) 表示对边与邻边的比值。"
+    },
+    "logarithmic": {
+      "title": "对数函数",
+      "description": "对数是指数函数的逆运算。自然对数 (ln) 以 e 为底，常用对数 (log) 以 10 为底。例如，如果 10² = 100，那么 log(100) = 2。"
+    },
+    "orderOfOperations": {
+      "title": "运算顺序", 
+      "description": "计算器遵循标准运算顺序：括号、指数、乘法和除法（从左到右）、加法和减法（从左到右）。"
+    }
+  }
+} 
