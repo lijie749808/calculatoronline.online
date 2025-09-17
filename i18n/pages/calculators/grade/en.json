@@ -1,0 +1,185 @@
+{
+  "seo": {
+    "title": "Grade Calculator | Course Grade & Final Exam Calculator Online Free",
+    "description": "Free online grade calculator to calculate course grades based on weighted averages. Calculate what grade you need on final exam to achieve your desired course grade.",
+    "keywords": "grade calculator, course grade, final exam calculator, weighted average, GPA calculator, letter grade, percentage grade"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "calculators": "Calculators", 
+    "current": "Grade Calculator"
+  },
+  "header": {
+    "title": "Grade Calculator",
+    "description": "Calculate your course grade based on weighted averages and determine what grade you need on your final exam to achieve your desired course grade."
+  },
+  "calculator": {
+    "title": "Grade Calculator",
+    "description": "Choose between course grade calculation or final exam grade planning.",
+    "tabs": {
+      "course": "Course Grade",
+      "final": "Final Grade"
+    },
+    "course": {
+      "title": "Course Grade Calculator",
+      "assignments": "Assignments & Exams",
+      "addAssignment": "Add Assignment",
+      "assignmentName": "Assignment Name",
+      "gradeType": "Grade Type",
+      "grade": "Grade",
+      "weight": "Weight (%)",
+      "calculate": "Calculate Grade",
+      "clear": "Clear All",
+      "finalGrade": "Final Course Grade",
+      "gradeScale": "Grade Scale Reference"
+    },
+    "final": {
+      "title": "Final Exam Grade Calculator",
+      "currentGrade": "Current Grade (%)",
+      "desiredGrade": "Desired Grade (%)",
+      "finalWeight": "Final Exam Weight (%)",
+      "calculate": "Calculate Required Final Grade",
+      "requiredGrade": "Required Final Exam Grade",
+      "impossible": "This goal may not be achievable",
+      "alreadyAchieved": "You've already achieved your goal!",
+      "achievable": "This goal is achievable with effort!",
+      "tips": {
+        "title": "Tips",
+        "tip1": "Enter your current average grade in the course",
+        "tip2": "Set your desired final grade for the course",
+        "tip3": "Input how much the final exam is worth (as a percentage)",
+        "tip4": "The calculator will show what you need on the final"
+      }
+    }
+  },
+  "howToUse": {
+    "title": "How to Use the Grade Calculator",
+    "courseCalculator": {
+      "title": "Course Grade Calculator",
+      "items": [
+        "Add assignments, exams, and other graded items",
+        "Choose between percentage (0-100) or letter grades (A+ to F)",
+        "Enter the weight of each assignment as a percentage",
+        "Click 'Calculate Grade' to see your weighted average",
+        "Add more assignments as needed using the '+' button"
+      ]
+    },
+    "finalCalculator": {
+      "title": "Final Exam Calculator",
+      "items": [
+        "Enter your current grade in the course",
+        "Set your desired final grade goal",
+        "Input what percentage the final exam is worth",
+        "Get the exact grade needed on your final exam"
+      ]
+    },
+    "gradeTypes": {
+      "title": "Grade Input Types",
+      "description": "The calculator supports both percentage and letter grades:",
+      "examples": [
+        {
+          "type": "Percentage Grades",
+          "description": "Enter numbers from 0-100 (e.g., 85, 92.5)"
+        },
+        {
+          "type": "Letter Grades",
+          "description": "Choose from A+ to F scale with automatic conversion"
+        },
+        {
+          "type": "Mixed Grades",
+          "description": "Use different grade types for different assignments"
+        },
+        {
+          "type": "Weighted Average",
+          "description": "Each assignment contributes based on its weight"
+        }
+      ]
+    }
+  },
+  "about": {
+    "title": "About Grade Calculations",
+    "gradingSystem": {
+      "title": "Grading Systems",
+      "description": "Different institutions use various grading scales. Our calculator uses the standard American grading system:",
+      "scales": [
+        { "name": "A+ Grade", "range": "97-100% (GPA: 4.3)" },
+        { "name": "A Grade", "range": "93-96% (GPA: 4.0)" },
+        { "name": "A- Grade", "range": "90-92% (GPA: 3.7)" },
+        { "name": "B+ Grade", "range": "87-89% (GPA: 3.3)" },
+        { "name": "B Grade", "range": "83-86% (GPA: 3.0)" },
+        { "name": "B- Grade", "range": "80-82% (GPA: 2.7)" },
+        { "name": "C+ Grade", "range": "77-79% (GPA: 2.3)" },
+        { "name": "C Grade", "range": "73-76% (GPA: 2.0)" },
+        { "name": "C- Grade", "range": "70-72% (GPA: 1.7)" },
+        { "name": "D+ Grade", "range": "67-69% (GPA: 1.3)" },
+        { "name": "D Grade", "range": "63-66% (GPA: 1.0)" },
+        { "name": "D- Grade", "range": "60-62% (GPA: 0.7)" },
+        { "name": "F Grade", "range": "0-59% (GPA: 0.0)" }
+      ]
+    },
+    "weightedGrades": {
+      "title": "Weighted Average Calculation",
+      "description": "Weighted grades give different assignments different levels of importance. For example, if exams are worth 60% and homework is worth 40%, the calculator will weight your exam scores more heavily in determining your final grade."
+    },
+    "applications": {
+      "title": "Common Uses",
+      "items": [
+        "Calculate current course grade based on completed assignments",
+        "Plan what grade is needed on upcoming assignments",
+        "Determine final exam score needed to reach grade goals",
+        "Track academic progress throughout the semester",
+        "Compare different grading scenarios and strategies",
+        "Convert between letter grades and percentage scores"
+      ]
+    }
+  },
+  "sidebar": {
+    "quickActions": {
+      "title": "Quick Actions",
+      "age": "Age Calculator",
+      "bmi": "BMI Calculator", 
+      "allCalculators": "All Calculators"
+    },
+    "relatedCalculators": {
+      "title": "Related Calculators",
+      "items": [
+        {
+          "title": "Scientific Calculator",
+          "url": "/scientific",
+          "icon": "RiFunctionLine"
+        },
+        {
+          "title": "Mortgage Calculator",
+          "url": "/mortgage",
+          "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "Break Even ROAS Calculator",
+          "url": "/break-even-roas",
+          "icon": "RiTrendingUpLine"
+        },
+        {
+          "title": "Salary Hike Calculator",
+          "url": "/salary-hike",
+          "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "Time Calculator",
+          "url": "/time",
+          "icon": "RiTimeLine"
+        }
+      ]
+    },
+    "features": {
+      "title": "Calculator Features",
+      "items": [
+        "Weighted average calculation",
+        "Letter grade to percentage conversion",
+        "GPA calculation and display",
+        "Final exam grade planning",
+        "Multiple assignment support",
+        "Real-time grade updates"
+      ]
+    }
+  }
+}

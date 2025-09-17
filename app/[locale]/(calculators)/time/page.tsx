@@ -1,16 +1,17 @@
 import { Metadata } from "next";
-import MortgageCalculator from "@/components/calculators/mortgage-calculator";
+import TimeCalculator from "@/components/calculators/time-calculator";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import Icon from "@/components/icon";
 
 async function getTranslations(locale: string) {
   try {
-    const translations = await import(`@/i18n/pages/calculators/mortgage/${locale}.json`);
+    const translations = await import(`@/i18n/pages/calculators/time/${locale}.json`);
     return translations.default;
   } catch {
-    const fallback = await import(`@/i18n/pages/calculators/mortgage/en.json`);
+    const fallback = await import(`@/i18n/pages/calculators/time/en.json`);
     return fallback.default;
   }
 }
@@ -23,9 +24,9 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations(locale);
   
-  let canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/mortgage`;
+  let canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/time`;
   if (locale !== "en") {
-    canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/mortgage`;
+    canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/time`;
   }
 
   return {
@@ -38,8 +39,7 @@ export async function generateMetadata({
   };
 }
 
-// Client component for navigation links
-function NavigationBreadcrumb({ t }: { t: Record<string, any> }) {
+function NavigationBreadcrumb({ t }: { t: any }) {
   return (
     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
       <a href="/" className="hover:text-primary">{t.breadcrumb.home}</a>
@@ -51,8 +51,7 @@ function NavigationBreadcrumb({ t }: { t: Record<string, any> }) {
   );
 }
 
-// Client component for quick actions
-function QuickActions({ t }: { t: Record<string, any> }) {
+function QuickActions({ t }: { t: any }) {
   return (
     <Card>
       <CardHeader>
@@ -60,15 +59,15 @@ function QuickActions({ t }: { t: Record<string, any> }) {
       </CardHeader>
       <CardContent className="space-y-3">
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/break-even-roas">
-            <Icon name="RiTrendingUpLine" className="mr-2 size-4" />
-            {t.sidebar.quickActions.breakEvenRoas}
+          <a href="/age">
+            <Icon name="RiCalendar2Line" className="mr-2 size-4" />
+            {t.sidebar.quickActions.age}
           </a>
         </Button>
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/salary-hike">
-            <Icon name="RiMoneyDollarCircleLine" className="mr-2 size-4" />
-            {t.sidebar.quickActions.salaryHike}
+          <a href="/scientific">
+            <Icon name="RiFunctionLine" className="mr-2 size-4" />
+            {t.sidebar.quickActions.scientific}
           </a>
         </Button>
         <Button variant="outline" className="w-full justify-start" asChild>
@@ -82,8 +81,7 @@ function QuickActions({ t }: { t: Record<string, any> }) {
   );
 }
 
-// Client component for related calculators
-function RelatedCalculators({ t }: { t: Record<string, any> }) {
+function RelatedCalculators({ t }: { t: any }) {
   return (
     <Card>
       <CardHeader>
@@ -111,8 +109,7 @@ function RelatedCalculators({ t }: { t: Record<string, any> }) {
   );
 }
 
-// Client component for features
-function CalculatorFeatures({ t }: { t: Record<string, any> }) {
+function CalculatorFeatures({ t }: { t: any }) {
   return (
     <Card>
       <CardHeader>
@@ -132,7 +129,7 @@ function CalculatorFeatures({ t }: { t: Record<string, any> }) {
   );
 }
 
-export default async function MortgageCalculatorPage({
+export default async function TimeCalculatorPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -160,7 +157,7 @@ export default async function MortgageCalculatorPage({
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Icon name="RiHomeLine" className="size-6 text-primary" />
+                  <Icon name="RiTimeLine" className="size-6 text-primary" />
                   {t.calculator.title}
                 </CardTitle>
                 <CardDescription>
@@ -168,7 +165,7 @@ export default async function MortgageCalculatorPage({
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <MortgageCalculator />
+                <TimeCalculator t={t.calculator} locale={locale} />
               </CardContent>
             </Card>
 
@@ -179,9 +176,9 @@ export default async function MortgageCalculatorPage({
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <h3 className="font-semibold mb-2">{t.howToUse.inputFields.title}</h3>
+                  <h3 className="font-semibold mb-2">{t.howToUse.basicOperations.title}</h3>
                   <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                    {t.howToUse.inputFields.items.map((item: string, index: number) => (
+                    {t.howToUse.basicOperations.items.map((item: string, index: number) => (
                       <li key={index}>{item}</li>
                     ))}
                   </ul>
@@ -190,12 +187,10 @@ export default async function MortgageCalculatorPage({
                 <Separator />
                 
                 <div>
-                  <h3 className="font-semibold mb-2">{t.howToUse.calculations.title}</h3>
+                  <h3 className="font-semibold mb-2">{t.howToUse.dateTimeOperations.title}</h3>
                   <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                    {t.howToUse.calculations.items.map((item: Record<string, any>, index: number) => (
-                      <li key={index}>
-                        <strong>{item.type}:</strong> {item.description}
-                      </li>
+                    {t.howToUse.dateTimeOperations.items.map((item: string, index: number) => (
+                      <li key={index}>{item}</li>
                     ))}
                   </ul>
                 </div>
@@ -203,44 +198,57 @@ export default async function MortgageCalculatorPage({
                 <Separator />
 
                 <div>
-                  <h3 className="font-semibold mb-2">{t.howToUse.tips.title}</h3>
-                  <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                    {t.howToUse.tips.items.map((tip: string, index: number) => (
-                      <li key={index}>{tip}</li>
-                    ))}
-                  </ul>
+                  <h3 className="font-semibold mb-2">{t.howToUse.expressionSyntax.title}</h3>
+                  <div className="space-y-2 text-muted-foreground">
+                    <p>{t.howToUse.expressionSyntax.description}</p>
+                    <div className="grid md:grid-cols-2 gap-2">
+                      {t.howToUse.expressionSyntax.examples.map((example: any, index: number) => (
+                        <div key={index} className="p-3 bg-muted/50 rounded">
+                          <code className="text-sm">{example.expression}</code>
+                          <div className="text-xs text-muted-foreground mt-1">{example.description}</div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Mortgage Principles */}
+            {/* About Time Calculations */}
             <Card className="mt-8">
               <CardHeader>
-                <CardTitle>{t.mortgagePrinciples.title}</CardTitle>
+                <CardTitle>{t.about.title}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <h3 className="font-semibold mb-2">{t.mortgagePrinciples.monthlyPayment.title}</h3>
-                  <p className="text-muted-foreground">
-                    {t.mortgagePrinciples.monthlyPayment.description}
-                  </p>
+                  <h3 className="font-semibold mb-2">{t.about.timeUnits.title}</h3>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    {t.about.timeUnits.units.map((unit: any, index: number) => (
+                      <div key={index} className="flex justify-between items-center p-2 bg-muted/30 rounded">
+                        <span className="font-medium">{unit.name}</span>
+                        <span className="text-sm text-muted-foreground">{unit.value}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
 
                 <Separator />
 
                 <div>
-                  <h3 className="font-semibold mb-2">{t.mortgagePrinciples.interest.title}</h3>
-                  <p className="text-muted-foreground">
-                    {t.mortgagePrinciples.interest.description}
-                  </p>
+                  <h3 className="font-semibold mb-2">{t.about.applications.title}</h3>
+                  <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                    {t.about.applications.items.map((item: string, index: number) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
                 </div>
 
                 <Separator />
 
                 <div>
-                  <h3 className="font-semibold mb-2">{t.mortgagePrinciples.amortization.title}</h3>
+                  <h3 className="font-semibold mb-2">{t.about.precision.title}</h3>
                   <p className="text-muted-foreground">
-                    {t.mortgagePrinciples.amortization.description}
+                    {t.about.precision.description}
                   </p>
                 </div>
               </CardContent>
@@ -257,4 +265,4 @@ export default async function MortgageCalculatorPage({
       </div>
     </div>
   );
-} 
+}

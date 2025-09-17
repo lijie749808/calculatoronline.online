@@ -1,0 +1,124 @@
+{
+  "seo": {
+    "title": "Break Even ROAS Calculator - Free Online ROAS Calculator",
+    "description": "Free Break Even ROAS calculator to determine if your Facebook, TikTok, or Snapchat ads are profitable. Calculate your break-even point with VAT support.",
+    "keywords": "break even roas calculator, roas calculator, facebook ads calculator, tiktok ads calculator, snapchat ads calculator, advertising roi calculator"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "calculators": "Calculators",
+    "current": "Break Even ROAS Calculator"
+  },
+  "header": {
+    "title": "Break Even ROAS Calculator",
+    "description": "Calculate your Break Even ROAS to determine if your Facebook, TikTok, or Snapchat ads are profitable. Includes VAT calculations for accurate results."
+  },
+  "calculator": {
+    "title": "Break Even ROAS Calculator",
+    "description": "Enter your costs and revenue to calculate your break-even ROAS and profit analysis"
+  },
+  "sidebar": {
+    "quickActions": {
+      "title": "Quick Actions",
+      "mortgage": "Mortgage Calculator",
+      "salaryHike": "Salary Hike Calculator",
+      "allCalculators": "All Calculators"
+    },
+    "relatedCalculators": {
+      "title": "Related Calculators",
+      "items": [
+        {
+          "title": "Scientific Calculator",
+          "url": "/scientific",
+          "icon": "RiFunctionLine"
+        },
+        {
+          "title": "BMI Calculator",
+          "url": "/bmi",
+          "icon": "RiHeartPulseLine"
+        },
+        {
+          "title": "Age Calculator",
+          "url": "/age",
+          "icon": "RiCalendarLine"
+        },
+        {
+          "title": "Time Calculator",
+          "url": "/time",
+          "icon": "RiTimeLine"
+        },
+        {
+          "title": "Grade Calculator",
+          "url": "/grade",
+          "icon": "RiMedalLine"
+        }
+      ]
+    },
+    "features": {
+      "title": "Calculator Features",
+      "items": [
+        "VAT-inclusive calculations",
+        "Multiple cost categories",
+        "Real-time ROAS calculation",
+        "Profit margin analysis",
+        "ROAS interpretation guide",
+        "Copy results to clipboard"
+      ]
+    }
+  },
+  "howToUse": {
+    "title": "How to Use the Break Even ROAS Calculator",
+    "inputFields": {
+      "title": "Input Fields",
+      "items": [
+        "Enter all your costs per product (Cost of Goods, Shipping, Transaction, Other)",
+        "Select the appropriate VAT rate for each cost category",
+        "Enter your revenue per product",
+        "Select the VAT rate for your revenue",
+        "The calculator will automatically calculate your break-even ROAS"
+      ]
+    },
+    "calculations": {
+      "title": "Calculations",
+      "items": [
+        {
+          "type": "Break Even ROAS Formula",
+          "description": "ROAS = Total Revenue / (Total Revenue - Total Costs)"
+        },
+        {
+          "type": "VAT Calculations",
+          "description": "Net amounts are calculated by removing VAT from gross amounts"
+        },
+        {
+          "type": "Profit Analysis",
+          "description": "Profit margin and net profit per product are calculated automatically"
+        }
+      ]
+    },
+    "tips": {
+      "title": "Tips for Accurate Results",
+      "items": [
+        "Include all costs associated with your product",
+        "Use the correct VAT rates for your region",
+        "Enter revenue before any platform fees",
+        "Consider all transaction costs (payment processing, etc.)",
+        "Update calculations when costs or prices change"
+      ]
+    }
+  },
+  "roasPrinciples": {
+    "title": "ROAS Principles",
+    "formula": {
+      "title": "Break Even ROAS Formula",
+      "description": "The Break Even ROAS is calculated by dividing total revenue by the difference between total revenue and total costs. This gives you the ROAS value at which your campaign breaks even."
+    },
+    "interpretation": {
+      "title": "ROAS Interpretation",
+      "description": "ROAS (Return on Ad Spend) measures how much revenue you earn for every dollar spent on advertising. A ROAS of 1 means you break even, while higher values indicate profit and lower values indicate losses."
+    },
+    "importance": {
+      "title": "Why Break Even ROAS is Important",
+      "description": "Knowing your break-even ROAS helps you determine if your advertising campaigns are profitable. You can compare this to your actual ROAS in Facebook, TikTok, or Snapchat to make informed decisions about campaign optimization."
+    }
+  }
+} 

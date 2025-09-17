@@ -1,0 +1,172 @@
+{
+  "seo": {
+    "title": "时间计算器 | 时间加减法计算器 - 小时分钟秒计算器在线",
+    "description": "免费在线时间计算器，支持时间加减运算。计算时间差异、在日期上加减时间，解决复杂的时间表达式计算（天、小时、分钟、秒）。",
+    "keywords": "时间计算器, 时间加法, 时间减法, 时间运算, 小时计算器, 分钟计算器, 时间差计算, 日期时间计算器"
+  },
+  "breadcrumb": {
+    "home": "首页",
+    "calculators": "计算器", 
+    "current": "时间计算器"
+  },
+  "header": {
+    "title": "时间计算器",
+    "description": "执行时间算术运算，包括加法、减法和复杂表达式。计算时间差异、在日期上加减时间，解决基于时间的问题。"
+  },
+  "calculator": {
+    "title": "时间计算器",
+    "description": "选择三种计算模式：基础时间算术、日期/时间计算或复杂时间表达式。",
+    "tabs": {
+      "basic": "基础时间运算",
+      "datetime": "日期与时间",
+      "expression": "表达式计算"
+    },
+    "basic": {
+      "title": "时间加法与减法",
+      "time1": "第一个时间值",
+      "time2": "第二个时间值",
+      "calculate": "计算",
+      "clear": "清除",
+      "result": "结果"
+    },
+    "datetime": {
+      "title": "在日期上加减时间",
+      "startDate": "开始日期",
+      "startTime": "开始时间",
+      "timeValue": "要加减的时间",
+      "calculate": "计算新的日期和时间",
+      "result": "结果"
+    },
+    "expression": {
+      "title": "时间表达式计算器",
+      "input": "时间表达式",
+      "calculate": "计算表达式",
+      "result": "结果",
+      "help": "使用 d（天）、h（小时）、m（分钟）、s（秒）。示例：1d 2h 30m + 45m - 15s",
+      "examples": {
+        "title": "示例"
+      }
+    }
+  },
+  "howToUse": {
+    "title": "如何使用时间计算器",
+    "basicOperations": {
+      "title": "基础时间运算",
+      "items": [
+        "使用天、小时、分钟和秒输入时间值",
+        "选择加法（+）或减法（-）运算",
+        "点击计算查看结果",
+        "结果自动处理溢出（例如：70分钟变为1小时10分钟）"
+      ]
+    },
+    "dateTimeOperations": {
+      "title": "日期时间计算",
+      "items": [
+        "设置起始日期和时间",
+        "输入要加减的时间量",
+        "获得准确的结果日期和时间",
+        "适用于日程安排和截止日期计算"
+      ]
+    },
+    "expressionSyntax": {
+      "title": "表达式语法",
+      "description": "使用带时间单位的数学表达式进行复杂计算：",
+      "examples": [
+        {
+          "expression": "2h 30m + 1h 15m",
+          "description": "基础加法"
+        },
+        {
+          "expression": "1d 12h - 6h 30m",
+          "description": "混合单位减法"
+        },
+        {
+          "expression": "3600s + 2h - 30m",
+          "description": "秒数转换"
+        },
+        {
+          "expression": "5d + 12h + 30m",
+          "description": "多重加法"
+        }
+      ]
+    }
+  },
+  "about": {
+    "title": "关于时间计算",
+    "timeUnits": {
+      "title": "时间单位",
+      "units": [
+        { "name": "秒", "value": "基本单位" },
+        { "name": "分钟", "value": "60秒" },
+        { "name": "小时", "value": "60分钟" },
+        { "name": "天", "value": "24小时" },
+        { "name": "周", "value": "7天" },
+        { "name": "月", "value": "约30.44天" }
+      ]
+    },
+    "applications": {
+      "title": "常见应用",
+      "items": [
+        "项目时间跟踪和管理",
+        "计算工作时间和加班",
+        "旅行时间规划和调度",
+        "烹饪和烘焙时间计算",
+        "运动和锻炼时间规划",
+        "活动策划和时间线创建"
+      ]
+    },
+    "precision": {
+      "title": "计算精度",
+      "description": "我们的时间计算器处理精确的算术运算，具有自动单位转换功能。所有计算都保持到秒级的精度，并正确处理时间溢出和负数结果。"
+    }
+  },
+  "sidebar": {
+    "quickActions": {
+      "title": "快捷操作",
+      "age": "年龄计算器",
+      "scientific": "科学计算器", 
+      "allCalculators": "所有计算器"
+    },
+    "relatedCalculators": {
+      "title": "相关计算器",
+      "items": [
+        {
+          "title": "BMI计算器",
+          "url": "/bmi",
+          "icon": "RiHeartPulseLine"
+        },
+        {
+          "title": "房贷计算器",
+          "url": "/mortgage",
+          "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "收支平衡ROAS计算器",
+          "url": "/break-even-roas",
+          "icon": "RiTrendingUpLine"
+        },
+        {
+          "title": "薪资涨幅计算器",
+          "url": "/salary-hike",
+          "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "成绩计算器",
+          "url": "/grade",
+          "icon": "RiMedalLine"
+        }
+      ]
+    },
+    "features": {
+      "title": "计算器特点",
+      "items": [
+        "基础时间加减运算",
+        "日期和时间计算",
+        "复杂表达式解析",
+        "自动单位转换",
+        "负时间处理",
+        "多种输入格式"
+      ]
+    }
+  }
+}

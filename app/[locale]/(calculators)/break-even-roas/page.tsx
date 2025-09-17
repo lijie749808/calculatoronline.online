@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import MortgageCalculator from "@/components/calculators/mortgage-calculator";
+import BreakEvenROASCalculator from "@/components/calculators/break-even-roas-calculator";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -7,10 +7,10 @@ import Icon from "@/components/icon";
 
 async function getTranslations(locale: string) {
   try {
-    const translations = await import(`@/i18n/pages/calculators/mortgage/${locale}.json`);
+    const translations = await import(`@/i18n/pages/calculators/break-even-roas/${locale}.json`);
     return translations.default;
   } catch {
-    const fallback = await import(`@/i18n/pages/calculators/mortgage/en.json`);
+    const fallback = await import(`@/i18n/pages/calculators/break-even-roas/en.json`);
     return fallback.default;
   }
 }
@@ -23,9 +23,9 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations(locale);
   
-  let canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/mortgage`;
+  let canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/break-even-roas`;
   if (locale !== "en") {
-    canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/mortgage`;
+    canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/break-even-roas`;
   }
 
   return {
@@ -60,14 +60,14 @@ function QuickActions({ t }: { t: Record<string, any> }) {
       </CardHeader>
       <CardContent className="space-y-3">
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/break-even-roas">
-            <Icon name="RiTrendingUpLine" className="mr-2 size-4" />
-            {t.sidebar.quickActions.breakEvenRoas}
+          <a href="/mortgage">
+            <Icon name="RiMoneyDollarCircleLine" className="mr-2 size-4" />
+            {t.sidebar.quickActions.mortgage}
           </a>
         </Button>
         <Button variant="outline" className="w-full justify-start" asChild>
           <a href="/salary-hike">
-            <Icon name="RiMoneyDollarCircleLine" className="mr-2 size-4" />
+            <Icon name="RiTrendingUpLine" className="mr-2 size-4" />
             {t.sidebar.quickActions.salaryHike}
           </a>
         </Button>
@@ -132,7 +132,7 @@ function CalculatorFeatures({ t }: { t: Record<string, any> }) {
   );
 }
 
-export default async function MortgageCalculatorPage({
+export default async function BreakEvenROASCalculatorPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -160,7 +160,7 @@ export default async function MortgageCalculatorPage({
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Icon name="RiHomeLine" className="size-6 text-primary" />
+                  <Icon name="RiTrendingUpLine" className="size-6 text-primary" />
                   {t.calculator.title}
                 </CardTitle>
                 <CardDescription>
@@ -168,7 +168,7 @@ export default async function MortgageCalculatorPage({
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <MortgageCalculator />
+                <BreakEvenROASCalculator />
               </CardContent>
             </Card>
 
@@ -213,34 +213,34 @@ export default async function MortgageCalculatorPage({
               </CardContent>
             </Card>
 
-            {/* Mortgage Principles */}
+            {/* ROAS Principles */}
             <Card className="mt-8">
               <CardHeader>
-                <CardTitle>{t.mortgagePrinciples.title}</CardTitle>
+                <CardTitle>{t.roasPrinciples.title}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <h3 className="font-semibold mb-2">{t.mortgagePrinciples.monthlyPayment.title}</h3>
+                  <h3 className="font-semibold mb-2">{t.roasPrinciples.formula.title}</h3>
                   <p className="text-muted-foreground">
-                    {t.mortgagePrinciples.monthlyPayment.description}
+                    {t.roasPrinciples.formula.description}
                   </p>
                 </div>
 
                 <Separator />
 
                 <div>
-                  <h3 className="font-semibold mb-2">{t.mortgagePrinciples.interest.title}</h3>
+                  <h3 className="font-semibold mb-2">{t.roasPrinciples.interpretation.title}</h3>
                   <p className="text-muted-foreground">
-                    {t.mortgagePrinciples.interest.description}
+                    {t.roasPrinciples.interpretation.description}
                   </p>
                 </div>
 
                 <Separator />
 
                 <div>
-                  <h3 className="font-semibold mb-2">{t.mortgagePrinciples.amortization.title}</h3>
+                  <h3 className="font-semibold mb-2">{t.roasPrinciples.importance.title}</h3>
                   <p className="text-muted-foreground">
-                    {t.mortgagePrinciples.amortization.description}
+                    {t.roasPrinciples.importance.description}
                   </p>
                 </div>
               </CardContent>

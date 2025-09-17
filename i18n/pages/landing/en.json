@@ -61,46 +61,6 @@
     "show_happy_users": true,
     "show_badge": false
   },
-  "branding": {
-    "title": "Trusted by Students, Professionals & Businesses",
-    "items": [
-      {
-        "title": "Students",
-        "image": {
-          "src": "/imgs/logos/nextjs.svg",
-          "alt": "Students"
-        }
-      },
-      {
-        "title": "Engineers",
-        "image": {
-          "src": "/imgs/logos/react.svg",
-          "alt": "Engineers"
-        }
-      },
-      {
-        "title": "Accountants",
-        "image": {
-          "src": "/imgs/logos/tailwindcss.svg",
-          "alt": "Accountants"
-        }
-      },
-      {
-        "title": "Researchers",
-        "image": {
-          "src": "/imgs/logos/shadcn.svg",
-          "alt": "Researchers"
-        }
-      },
-      {
-        "title": "Businesses",
-        "image": {
-          "src": "/imgs/logos/vercel.svg",
-          "alt": "Businesses"
-        }
-      }
-    ]
-  },
   "feature": {
     "name": "feature",
     "title": "Calculator Categories",
@@ -114,26 +74,6 @@
           {
             "title": "Scientific Calculator",
             "url": "/scientific",
-            "target": "_self"
-          },
-          {
-            "title": "Graphing Calculator",
-            "url": "/graphing",
-            "target": "_self"
-          },
-          {
-            "title": "Equation Solver",
-            "url": "/equation-solver",
-            "target": "_self"
-          },
-          {
-            "title": "Matrix Calculator",
-            "url": "/matrix",
-            "target": "_self"
-          },
-          {
-            "title": "Statistics Calculator",
-            "url": "/statistics",
             "target": "_self"
           }
         ]
@@ -149,28 +89,13 @@
             "target": "_self"
           },
           {
-            "title": "Loan Calculator",
-            "url": "/loan",
+            "title": "Break Even ROAS Calculator",
+            "url": "/break-even-roas",
             "target": "_self"
           },
           {
-            "title": "Investment Calculator",
-            "url": "/investment",
-            "target": "_self"
-          },
-          {
-            "title": "Tax Calculator",
-            "url": "/tax",
-            "target": "_self"
-          },
-          {
-            "title": "Retirement Calculator",
-            "url": "/retirement",
-            "target": "_self"
-          },
-          {
-            "title": "Compound Interest",
-            "url": "/compound-interest",
+            "title": "Salary Hike Calculator",
+            "url": "/salary-hike",
             "target": "_self"
           }
         ]
@@ -184,111 +109,34 @@
             "title": "BMI Calculator",
             "url": "/bmi",
             "target": "_self"
-          },
-          {
-            "title": "Calorie Calculator",
-            "url": "/calorie",
-            "target": "_self"
-          },
-          {
-            "title": "Body Fat Calculator",
-            "url": "/body-fat",
-            "target": "_self"
-          },
-          {
-            "title": "Pregnancy Calculator",
-            "url": "/pregnancy",
-            "target": "_self"
-          }
-        ]
-      },
-      {
-        "title": "Unit Conversions",
-        "description": "Convert between different units of measurement - length, weight, temperature, currency, and more.",
-        "icon": "RiExchangeLine",
-        "children": [
-          {
-            "title": "Length Converter",
-            "url": "/length-converter",
-            "target": "_self"
-          },
-          {
-            "title": "Weight Converter",
-            "url": "/weight-converter",
-            "target": "_self"
-          },
-          {
-            "title": "Temperature Converter",
-            "url": "/temperature-converter",
-            "target": "_self"
-          },
-          {
-            "title": "Currency Converter",
-            "url": "/currency-converter",
-            "target": "_self"
-          },
-          {
-            "title": "Area Converter",
-            "url": "/area-converter",
-            "target": "_self"
           }
         ]
       },
       {
         "title": "Date & Time",
-        "description": "Age calculator, date difference, time zone converter, and business day calculator for scheduling.",
+        "description": "Age calculator, time calculator, and other time-related tools for scheduling.",
         "icon": "RiCalendarLine",
         "children": [
           {
             "title": "Age Calculator",
-            "url": "/age-calculator",
+            "url": "/age",
             "target": "_self"
           },
           {
-            "title": "Date Difference",
-            "url": "/date-difference",
-            "target": "_self"
-          },
-          {
-            "title": "Time Zone Converter",
-            "url": "/timezone-converter",
+            "title": "Time Calculator",
+            "url": "/time",
             "target": "_self"
           }
         ]
       },
       {
         "title": "Specialized Tools",
-        "description": "GPA calculator, grade calculator, tip calculator, password generator, and other utility calculators.",
+        "description": "Grade calculator and other utility calculators.",
         "icon": "RiToolsLine",
         "children": [
           {
-            "title": "GPA Calculator",
-            "url": "/gpa-calculator",
-            "target": "_self"
-          },
-          {
             "title": "Grade Calculator",
-            "url": "/grade-calculator",
-            "target": "_self"
-          },
-          {
-            "title": "Tip Calculator",
-            "url": "/tip-calculator",
-            "target": "_self"
-          },
-          {
-            "title": "Password Generator",
-            "url": "/password-generator",
-            "target": "_self"
-          },
-          {
-            "title": "Random Number Generator",
-            "url": "/random-number",
-            "target": "_self"
-          },
-          {
-            "title": "Percentage Calculator",
-            "url": "/percentage",
+            "url": "/grade",
             "target": "_self"
           }
         ]
@@ -445,18 +293,28 @@
           "title": "Categories",
           "children": [
             {
-              "title": "Math Calculators",
-              "url": "/math",
+              "title": "Math & Science",
+              "url": "/scientific",
               "target": "_self"
             },
             {
-              "title": "Financial Calculators",
-              "url": "/finance",
+              "title": "Financial Planning",
+              "url": "/mortgage",
               "target": "_self"
             },
             {
-              "title": "Health Calculators",
-              "url": "/health",
+              "title": "Health & Fitness",
+              "url": "/bmi",
+              "target": "_self"
+            },
+            {
+              "title": "Date & Time",
+              "url": "/age",
+              "target": "_self"
+            },
+            {
+              "title": "Specialized Tools",
+              "url": "/grade",
               "target": "_self"
             }
           ]
@@ -477,6 +335,21 @@
             {
               "title": "BMI Calculator",
               "url": "/bmi",
+              "target": "_self"
+            },
+            {
+              "title": "Age Calculator",
+              "url": "/age",
+              "target": "_self"
+            },
+            {
+              "title": "Break Even ROAS",
+              "url": "/break-even-roas",
+              "target": "_self"
+            },
+            {
+              "title": "Salary Hike Calculator",
+              "url": "/salary-hike",
               "target": "_self"
             }
           ]

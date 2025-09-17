@@ -1,0 +1,123 @@
+{
+  "seo": {
+    "title": "BMI Calculator - Free Online BMI Calculator",
+    "description": "Free BMI calculator to calculate your Body Mass Index. Check your BMI category and healthy weight range for your height.",
+    "keywords": "bmi calculator, body mass index calculator, bmi chart, weight calculator, health calculator"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "calculators": "Calculators",
+    "current": "BMI Calculator"
+  },
+  "header": {
+    "title": "BMI Calculator",
+    "description": "Calculate your Body Mass Index (BMI) to assess your weight status. Get your BMI category and healthy weight range for your height."
+  },
+  "calculator": {
+    "title": "BMI Calculator",
+    "description": "Enter your weight and height to calculate your BMI and healthy weight range"
+  },
+  "sidebar": {
+    "quickActions": {
+      "title": "Quick Actions",
+      "age": "Age Calculator",
+      "scientific": "Scientific Calculator",
+      "allCalculators": "All Calculators"
+    },
+    "relatedCalculators": {
+      "title": "Related Calculators",
+      "items": [
+        {
+          "title": "Mortgage Calculator",
+          "url": "/mortgage",
+          "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "Break Even ROAS Calculator",
+          "url": "/break-even-roas",
+          "icon": "RiTrendingUpLine"
+        },
+        {
+          "title": "Salary Hike Calculator",
+          "url": "/salary-hike",
+          "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "Time Calculator",
+          "url": "/time",
+          "icon": "RiTimeLine"
+        },
+        {
+          "title": "Grade Calculator",
+          "url": "/grade",
+          "icon": "RiMedalLine"
+        }
+      ]
+    },
+    "features": {
+      "title": "Calculator Features",
+      "items": [
+        "BMI calculation with metric and imperial units",
+        "BMI category classification",
+        "Healthy weight range calculation",
+        "Real-time calculations",
+        "Color-coded BMI categories",
+        "Copy results to clipboard"
+      ]
+    }
+  },
+  "howToUse": {
+    "title": "How to Use the BMI Calculator",
+    "inputFields": {
+      "title": "Input Fields",
+      "items": [
+        "Select your preferred unit system (metric or imperial)",
+        "Enter your current weight in kilograms or pounds",
+        "Enter your height in centimeters or inches",
+        "The calculator will automatically update your BMI result"
+      ]
+    },
+    "calculations": {
+      "title": "Calculations",
+      "items": [
+        {
+          "type": "BMI Formula",
+          "description": "BMI = weight (kg) / height (m)² or weight (lbs) / height (in)² × 703"
+        },
+        {
+          "type": "BMI Categories",
+          "description": "Underweight, Normal weight, Overweight, and Obese classifications"
+        },
+        {
+          "type": "Healthy Weight Range",
+          "description": "Recommended weight range for your height based on BMI 18.5-24.9"
+        }
+      ]
+    },
+    "tips": {
+      "title": "Tips for Accurate Results",
+      "items": [
+        "Measure your height without shoes",
+        "Weigh yourself in the morning on an empty stomach",
+        "Use consistent units (metric or imperial)",
+        "BMI is a screening tool, not a diagnostic measure",
+        "Consult healthcare professionals for personalized advice"
+      ]
+    }
+  },
+  "bmiPrinciples": {
+    "title": "BMI Principles",
+    "formula": {
+      "title": "BMI Formula",
+      "description": "BMI is calculated by dividing your weight in kilograms by the square of your height in meters. For imperial units, the formula is adjusted with a conversion factor of 703."
+    },
+    "categories": {
+      "title": "BMI Categories",
+      "description": "BMI categories help classify weight status: Underweight (BMI < 18.5), Normal weight (BMI 18.5-24.9), Overweight (BMI 25.0-29.9), and Obese (BMI ≥ 30.0) with further subdivisions for obesity classes."
+    },
+    "limitations": {
+      "title": "BMI Limitations",
+      "description": "BMI doesn't distinguish between muscle and fat mass, so athletes may have high BMI despite being healthy. It also doesn't account for age, sex, ethnicity, or body composition. BMI is best used as a screening tool alongside other health assessments."
+    }
+  }
+} 

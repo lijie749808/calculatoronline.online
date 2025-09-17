@@ -1,16 +1,17 @@
 import { Metadata } from "next";
-import MortgageCalculator from "@/components/calculators/mortgage-calculator";
+import AgeCalculator from "@/components/calculators/age-calculator";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import Icon from "@/components/icon";
 
 async function getTranslations(locale: string) {
   try {
-    const translations = await import(`@/i18n/pages/calculators/mortgage/${locale}.json`);
+    const translations = await import(`@/i18n/pages/calculators/age/${locale}.json`);
     return translations.default;
   } catch {
-    const fallback = await import(`@/i18n/pages/calculators/mortgage/en.json`);
+    const fallback = await import(`@/i18n/pages/calculators/age/en.json`);
     return fallback.default;
   }
 }
@@ -23,9 +24,9 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations(locale);
   
-  let canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/mortgage`;
+  let canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/age`;
   if (locale !== "en") {
-    canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/mortgage`;
+    canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/age`;
   }
 
   return {
@@ -38,8 +39,7 @@ export async function generateMetadata({
   };
 }
 
-// Client component for navigation links
-function NavigationBreadcrumb({ t }: { t: Record<string, any> }) {
+function NavigationBreadcrumb({ t }: { t: any }) {
   return (
     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
       <a href="/" className="hover:text-primary">{t.breadcrumb.home}</a>
@@ -51,8 +51,7 @@ function NavigationBreadcrumb({ t }: { t: Record<string, any> }) {
   );
 }
 
-// Client component for quick actions
-function QuickActions({ t }: { t: Record<string, any> }) {
+function QuickActions({ t }: { t: any }) {
   return (
     <Card>
       <CardHeader>
@@ -60,15 +59,15 @@ function QuickActions({ t }: { t: Record<string, any> }) {
       </CardHeader>
       <CardContent className="space-y-3">
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/break-even-roas">
-            <Icon name="RiTrendingUpLine" className="mr-2 size-4" />
-            {t.sidebar.quickActions.breakEvenRoas}
+          <a href="/scientific">
+            <Icon name="RiFunctionLine" className="mr-2 size-4" />
+            {t.sidebar.quickActions.scientific}
           </a>
         </Button>
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/salary-hike">
-            <Icon name="RiMoneyDollarCircleLine" className="mr-2 size-4" />
-            {t.sidebar.quickActions.salaryHike}
+          <a href="/bmi">
+            <Icon name="RiHeartLine" className="mr-2 size-4" />
+            {t.sidebar.quickActions.bmi}
           </a>
         </Button>
         <Button variant="outline" className="w-full justify-start" asChild>
@@ -82,8 +81,7 @@ function QuickActions({ t }: { t: Record<string, any> }) {
   );
 }
 
-// Client component for related calculators
-function RelatedCalculators({ t }: { t: Record<string, any> }) {
+function RelatedCalculators({ t }: { t: any }) {
   return (
     <Card>
       <CardHeader>
@@ -111,8 +109,7 @@ function RelatedCalculators({ t }: { t: Record<string, any> }) {
   );
 }
 
-// Client component for features
-function CalculatorFeatures({ t }: { t: Record<string, any> }) {
+function CalculatorFeatures({ t }: { t: any }) {
   return (
     <Card>
       <CardHeader>
@@ -132,7 +129,62 @@ function CalculatorFeatures({ t }: { t: Record<string, any> }) {
   );
 }
 
-export default async function MortgageCalculatorPage({
+function UsageGuide({ t }: { t: any }) {
+  const steps = t.usage.steps;
+
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2">
+          <Icon name="RiQuestionLine" className="size-6 text-primary" />
+          {t.usage.title}
+        </CardTitle>
+        <CardDescription>{t.usage.description}</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <div className="space-y-4">
+          {steps.map((step: any, index: number) => (
+            <div key={index} className="flex gap-4">
+              <Badge variant="outline" className="size-8 rounded-full flex items-center justify-center flex-shrink-0">
+                {index + 1}
+              </Badge>
+              <div>
+                <h4 className="font-semibold mb-1">{step.title}</h4>
+                <p className="text-sm text-muted-foreground">{step.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
+
+function AboutAgeCalculation({ t }: { t: any }) {
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2">
+          <Icon name="RiInformationLine" className="size-6 text-primary" />
+          {t.about.title}
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="prose prose-sm max-w-none dark:prose-invert">
+        <p>{t.about.description}</p>
+        <h4>{t.about.accuracy.title}</h4>
+        <p>{t.about.accuracy.description}</p>
+        <h4>{t.about.applications.title}</h4>
+        <ul>
+          {t.about.applications.list.map((item: string, index: number) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      </CardContent>
+    </Card>
+  );
+}
+
+export default async function AgeCalculatorPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -160,7 +212,7 @@ export default async function MortgageCalculatorPage({
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Icon name="RiHomeLine" className="size-6 text-primary" />
+                  <Icon name="RiCalendar2Line" className="size-6 text-primary" />
                   {t.calculator.title}
                 </CardTitle>
                 <CardDescription>
@@ -168,7 +220,7 @@ export default async function MortgageCalculatorPage({
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <MortgageCalculator />
+                <AgeCalculator t={t.calculator} locale={locale} />
               </CardContent>
             </Card>
 
@@ -179,9 +231,9 @@ export default async function MortgageCalculatorPage({
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <h3 className="font-semibold mb-2">{t.howToUse.inputFields.title}</h3>
+                  <h3 className="font-semibold mb-2">{t.howToUse.steps.title}</h3>
                   <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                    {t.howToUse.inputFields.items.map((item: string, index: number) => (
+                    {t.howToUse.steps.items.map((item: string, index: number) => (
                       <li key={index}>{item}</li>
                     ))}
                   </ul>
@@ -190,12 +242,10 @@ export default async function MortgageCalculatorPage({
                 <Separator />
                 
                 <div>
-                  <h3 className="font-semibold mb-2">{t.howToUse.calculations.title}</h3>
+                  <h3 className="font-semibold mb-2">{t.howToUse.features.title}</h3>
                   <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                    {t.howToUse.calculations.items.map((item: Record<string, any>, index: number) => (
-                      <li key={index}>
-                        <strong>{item.type}:</strong> {item.description}
-                      </li>
+                    {t.howToUse.features.items.map((item: string, index: number) => (
+                      <li key={index}>{item}</li>
                     ))}
                   </ul>
                 </div>
@@ -205,42 +255,44 @@ export default async function MortgageCalculatorPage({
                 <div>
                   <h3 className="font-semibold mb-2">{t.howToUse.tips.title}</h3>
                   <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                    {t.howToUse.tips.items.map((tip: string, index: number) => (
-                      <li key={index}>{tip}</li>
+                    {t.howToUse.tips.items.map((item: string, index: number) => (
+                      <li key={index}>{item}</li>
                     ))}
                   </ul>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Mortgage Principles */}
+            {/* About Age Calculation */}
             <Card className="mt-8">
               <CardHeader>
-                <CardTitle>{t.mortgagePrinciples.title}</CardTitle>
+                <CardTitle>{t.about.title}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <h3 className="font-semibold mb-2">{t.mortgagePrinciples.monthlyPayment.title}</h3>
+                  <h3 className="font-semibold mb-2">{t.about.accuracy.title}</h3>
                   <p className="text-muted-foreground">
-                    {t.mortgagePrinciples.monthlyPayment.description}
+                    {t.about.accuracy.description}
                   </p>
                 </div>
 
                 <Separator />
 
                 <div>
-                  <h3 className="font-semibold mb-2">{t.mortgagePrinciples.interest.title}</h3>
-                  <p className="text-muted-foreground">
-                    {t.mortgagePrinciples.interest.description}
-                  </p>
+                  <h3 className="font-semibold mb-2">{t.about.applications.title}</h3>
+                  <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                    {t.about.applications.items.map((item: string, index: number) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
                 </div>
 
                 <Separator />
 
                 <div>
-                  <h3 className="font-semibold mb-2">{t.mortgagePrinciples.amortization.title}</h3>
+                  <h3 className="font-semibold mb-2">{t.about.calculations.title}</h3>
                   <p className="text-muted-foreground">
-                    {t.mortgagePrinciples.amortization.description}
+                    {t.about.calculations.description}
                   </p>
                 </div>
               </CardContent>
@@ -257,4 +309,4 @@ export default async function MortgageCalculatorPage({
       </div>
     </div>
   );
-} 
+}

@@ -1,0 +1,147 @@
+{
+  "seo": {
+    "title": "Age Calculator | Calculate Your Age in Years, Months, Days - Calculator Online",
+    "description": "Free online age calculator to calculate your exact age in years, months, days, hours, minutes, and seconds. Calculate how old you are today or on any given date.",
+    "keywords": "age calculator, calculate age, how old am i, date calculator, birthday calculator, years months days, exact age"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "calculators": "Calculators", 
+    "current": "Age Calculator"
+  },
+  "header": {
+    "title": "Age Calculator",
+    "description": "Calculate your exact age in years, months, days, and more. Find out how old you are today or on any specific date, plus get birthday countdown information."
+  },
+  "calculator": {
+    "title": "Age Calculator",
+    "description": "Enter your birth date and the date you want to calculate your age for. The calculator will show your exact age in multiple formats.",
+    "form": {
+      "title": "Date Input",
+      "birthDate": "Date of Birth",
+      "targetDate": "Calculate Age At",
+      "calculate": "Calculate Age",
+      "clear": "Clear"
+    },
+    "results": {
+      "mainTitle": "Your Age",
+      "years": "years",
+      "months": "months", 
+      "days": "days",
+      "born": "Born on",
+      "detailsTitle": "Detailed Breakdown",
+      "totalDays": "Total Days",
+      "totalWeeks": "Total Weeks",
+      "totalHours": "Total Hours",
+      "totalMinutes": "Total Minutes",
+      "totalSeconds": "Total Seconds",
+      "secondsNote": "You've been alive for this many seconds!",
+      "birthdayTitle": "Birthday Information",
+      "nextBirthday": "Next Birthday",
+      "daysLeft": "days left",
+      "happyBirthday": "Happy Birthday!"
+    }
+  },
+  "howToUse": {
+    "title": "How to Use the Age Calculator",
+    "steps": {
+      "title": "Basic Steps",
+      "items": [
+        "Enter your date of birth in the first field",
+        "Select the date you want to calculate your age for (defaults to today)",
+        "Click 'Calculate Age' to see your exact age",
+        "View detailed breakdowns in multiple time units"
+      ]
+    },
+    "features": {
+      "title": "Features",
+      "items": [
+        "Calculate exact age in years, months, and days",
+        "Show age in total days, weeks, hours, minutes, and seconds",
+        "Display days until your next birthday",
+        "Show what day of the week you were born on",
+        "Calculate age for any specific date"
+      ]
+    },
+    "tips": {
+      "title": "Tips",
+      "items": [
+        "Use the target date field to calculate your age on a specific date",
+        "Perfect for planning milestone birthdays",
+        "Useful for official documents requiring exact age",
+        "Great for curiosity about time passage"
+      ]
+    }
+  },
+  "about": {
+    "title": "About Age Calculation",
+    "accuracy": {
+      "title": "Calculation Accuracy",
+      "description": "Our age calculator uses precise date arithmetic to calculate the exact time difference between your birth date and the target date. It accounts for leap years and varying month lengths to provide accurate results."
+    },
+    "applications": {
+      "title": "Common Applications",
+      "items": [
+        "Official documents and forms",
+        "Medical records and appointments",
+        "Legal requirements and contracts",
+        "Educational enrollment",
+        "Insurance applications",
+        "Curiosity and personal interest"
+      ]
+    },
+    "calculations": {
+      "title": "How It Works",
+      "description": "The calculator computes the difference between two dates by accounting for years, months, and days separately. It then converts this information into various time units like hours, minutes, and seconds for comprehensive age representation."
+    }
+  },
+  "sidebar": {
+    "quickActions": {
+      "title": "Quick Actions",
+      "scientific": "Scientific Calculator",
+      "bmi": "BMI Calculator", 
+      "allCalculators": "All Calculators"
+    },
+    "relatedCalculators": {
+      "title": "Related Calculators",
+      "items": [
+        {
+          "title": "Time Calculator",
+          "url": "/time",
+          "icon": "RiTimeLine"
+        },
+        {
+          "title": "Mortgage Calculator",
+          "url": "/mortgage",
+          "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "Break Even ROAS Calculator",
+          "url": "/break-even-roas",
+          "icon": "RiTrendingUpLine"
+        },
+        {
+          "title": "Salary Hike Calculator",
+          "url": "/salary-hike",
+          "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "Grade Calculator",
+          "url": "/grade",
+          "icon": "RiMedalLine"
+        }
+      ]
+    },
+    "features": {
+      "title": "Calculator Features",
+      "items": [
+        "Precise age calculation",
+        "Multiple time unit display",
+        "Birthday countdown",
+        "Day of week information",
+        "Clean, intuitive interface",
+        "Mobile-friendly design"
+      ]
+    }
+  }
+}

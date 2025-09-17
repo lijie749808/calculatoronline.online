@@ -1,5 +1,6 @@
 import { Metadata } from "next";
-import MortgageCalculator from "@/components/calculators/mortgage-calculator";
+import Link from "next/link";
+import SalaryHikeCalculator from "@/components/calculators/salary-hike-calculator";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -7,10 +8,10 @@ import Icon from "@/components/icon";
 
 async function getTranslations(locale: string) {
   try {
-    const translations = await import(`@/i18n/pages/calculators/mortgage/${locale}.json`);
+    const translations = await import(`@/i18n/pages/calculators/salary-hike/${locale}.json`);
     return translations.default;
   } catch {
-    const fallback = await import(`@/i18n/pages/calculators/mortgage/en.json`);
+    const fallback = await import(`@/i18n/pages/calculators/salary-hike/en.json`);
     return fallback.default;
   }
 }
@@ -23,9 +24,9 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations(locale);
   
-  let canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/mortgage`;
+  let canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/salary-hike`;
   if (locale !== "en") {
-    canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/mortgage`;
+    canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/salary-hike`;
   }
 
   return {
@@ -42,9 +43,9 @@ export async function generateMetadata({
 function NavigationBreadcrumb({ t }: { t: Record<string, any> }) {
   return (
     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
-      <a href="/" className="hover:text-primary">{t.breadcrumb.home}</a>
+      <Link href="/" className="hover:text-primary">{t.breadcrumb.home}</Link>
       <span>/</span>
-      <a href="/#feature" className="hover:text-primary">{t.breadcrumb.calculators}</a>
+      <Link href="/#feature" className="hover:text-primary">{t.breadcrumb.calculators}</Link>
       <span>/</span>
       <span>{t.breadcrumb.current}</span>
     </div>
@@ -60,22 +61,22 @@ function QuickActions({ t }: { t: Record<string, any> }) {
       </CardHeader>
       <CardContent className="space-y-3">
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/break-even-roas">
+          <Link href="/mortgage">
+            <Icon name="RiMoneyDollarCircleLine" className="mr-2 size-4" />
+            {t.sidebar.quickActions.mortgage}
+          </Link>
+        </Button>
+        <Button variant="outline" className="w-full justify-start" asChild>
+          <Link href="/break-even-roas">
             <Icon name="RiTrendingUpLine" className="mr-2 size-4" />
             {t.sidebar.quickActions.breakEvenRoas}
-          </a>
+          </Link>
         </Button>
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/salary-hike">
-            <Icon name="RiMoneyDollarCircleLine" className="mr-2 size-4" />
-            {t.sidebar.quickActions.salaryHike}
-          </a>
-        </Button>
-        <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/#feature">
+          <Link href="/#feature">
             <Icon name="RiCalculatorLine" className="mr-2 size-4" />
             {t.sidebar.quickActions.allCalculators}
-          </a>
+          </Link>
         </Button>
       </CardContent>
     </Card>
@@ -92,7 +93,7 @@ function RelatedCalculators({ t }: { t: Record<string, any> }) {
       <CardContent>
         <div className="space-y-3">
           {t.sidebar.relatedCalculators.items.map((calc: any, index: number) => (
-            <a
+            <Link
               key={index}
               href={calc.url}
               className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors group"
@@ -103,7 +104,7 @@ function RelatedCalculators({ t }: { t: Record<string, any> }) {
               <span className="text-sm font-medium group-hover:text-primary">
                 {calc.title}
               </span>
-            </a>
+            </Link>
           ))}
         </div>
       </CardContent>
@@ -132,7 +133,7 @@ function CalculatorFeatures({ t }: { t: Record<string, any> }) {
   );
 }
 
-export default async function MortgageCalculatorPage({
+export default async function SalaryHikeCalculatorPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -160,7 +161,7 @@ export default async function MortgageCalculatorPage({
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Icon name="RiHomeLine" className="size-6 text-primary" />
+                  <Icon name="RiMoneyDollarCircleLine" className="size-6 text-primary" />
                   {t.calculator.title}
                 </CardTitle>
                 <CardDescription>
@@ -168,7 +169,7 @@ export default async function MortgageCalculatorPage({
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <MortgageCalculator />
+                <SalaryHikeCalculator />
               </CardContent>
             </Card>
 
@@ -213,34 +214,34 @@ export default async function MortgageCalculatorPage({
               </CardContent>
             </Card>
 
-            {/* Mortgage Principles */}
+            {/* Salary Hike Principles */}
             <Card className="mt-8">
               <CardHeader>
-                <CardTitle>{t.mortgagePrinciples.title}</CardTitle>
+                <CardTitle>{t.salaryHikePrinciples.title}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <h3 className="font-semibold mb-2">{t.mortgagePrinciples.monthlyPayment.title}</h3>
+                  <h3 className="font-semibold mb-2">{t.salaryHikePrinciples.formula.title}</h3>
                   <p className="text-muted-foreground">
-                    {t.mortgagePrinciples.monthlyPayment.description}
+                    {t.salaryHikePrinciples.formula.description}
                   </p>
                 </div>
 
                 <Separator />
 
                 <div>
-                  <h3 className="font-semibold mb-2">{t.mortgagePrinciples.interest.title}</h3>
+                  <h3 className="font-semibold mb-2">{t.salaryHikePrinciples.interpretation.title}</h3>
                   <p className="text-muted-foreground">
-                    {t.mortgagePrinciples.interest.description}
+                    {t.salaryHikePrinciples.interpretation.description}
                   </p>
                 </div>
 
                 <Separator />
 
                 <div>
-                  <h3 className="font-semibold mb-2">{t.mortgagePrinciples.amortization.title}</h3>
+                  <h3 className="font-semibold mb-2">{t.salaryHikePrinciples.importance.title}</h3>
                   <p className="text-muted-foreground">
-                    {t.mortgagePrinciples.amortization.description}
+                    {t.salaryHikePrinciples.importance.description}
                   </p>
                 </div>
               </CardContent>

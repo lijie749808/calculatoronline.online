@@ -1,0 +1,123 @@
+{
+  "seo": {
+    "title": "薪资涨幅计算器 - 免费在线薪资增长计算器",
+    "description": "免费薪资涨幅计算器，计算薪资增长百分比和新薪资。通过薪资比较查找涨幅百分比，或通过输入涨幅百分比计算新薪资。",
+    "keywords": "薪资涨幅计算器, 薪资增长计算器, 涨幅百分比计算器, 薪资提升计算器, 加薪计算器"
+  },
+  "breadcrumb": {
+    "home": "首页",
+    "calculators": "计算器",
+    "current": "薪资涨幅计算器"
+  },
+  "header": {
+    "title": "薪资涨幅计算器",
+    "description": "计算您的薪资涨幅百分比和新薪资。通过比较当前和新薪资查找涨幅百分比，或通过输入涨幅百分比计算新薪资。"
+  },
+  "calculator": {
+    "title": "薪资涨幅计算器",
+    "description": "使用我们易于使用的计算器计算薪资涨幅百分比和新薪资"
+  },
+  "sidebar": {
+    "quickActions": {
+      "title": "快速操作",
+      "mortgage": "房贷计算器",
+      "breakEvenRoas": "收支平衡ROAS计算器",
+      "allCalculators": "所有计算器"
+    },
+    "relatedCalculators": {
+      "title": "相关计算器",
+      "items": [
+        {
+          "title": "科学计算器",
+          "url": "/scientific",
+          "icon": "RiFunctionLine"
+        },
+        {
+          "title": "BMI计算器",
+          "url": "/bmi",
+          "icon": "RiHeartPulseLine"
+        },
+        {
+          "title": "年龄计算器",
+          "url": "/age",
+          "icon": "RiCalendarLine"
+        },
+        {
+          "title": "时间计算器",
+          "url": "/time",
+          "icon": "RiTimeLine"
+        },
+        {
+          "title": "成绩计算器",
+          "url": "/grade",
+          "icon": "RiMedalLine"
+        }
+      ]
+    },
+    "features": {
+      "title": "计算器功能",
+      "items": [
+        "两种计算模式",
+        "实时计算",
+        "涨幅百分比分析",
+        "月度和年度明细",
+        "快速涨幅按钮",
+        "复制结果到剪贴板"
+      ]
+    }
+  },
+  "howToUse": {
+    "title": "如何使用薪资涨幅计算器",
+    "inputFields": {
+      "title": "输入字段",
+      "items": [
+        "选择计算模式：通过涨幅百分比查找新薪资或通过薪资查找涨幅百分比",
+        "输入您当前的薪资金额",
+        "根据模式输入涨幅百分比或新薪资",
+        "计算器将自动计算结果"
+      ]
+    },
+    "calculations": {
+      "title": "计算",
+      "items": [
+        {
+          "type": "涨幅百分比公式",
+          "description": "涨幅百分比 = (新薪资 - 当前薪资) / 当前薪资 × 100"
+        },
+        {
+          "type": "新薪资公式",
+          "description": "新薪资 = 当前薪资 × (1 + 涨幅百分比 / 100)"
+        },
+        {
+          "type": "薪资增长",
+          "description": "薪资增长 = 新薪资 - 当前薪资"
+        }
+      ]
+    },
+    "tips": {
+      "title": "准确结果的提示",
+      "items": [
+        "输入年度薪资金额以获得准确计算",
+        "对当前和新薪资使用相同货币",
+        "考虑薪资包的所有组成部分",
+        "使用快速涨幅按钮获取常见百分比",
+        "比较不同的涨幅场景以更好地规划"
+      ]
+    }
+  },
+  "salaryHikePrinciples": {
+    "title": "薪资涨幅原则",
+    "formula": {
+      "title": "薪资涨幅公式",
+      "description": "薪资涨幅百分比通过找到新薪资和当前薪资之间的差异，除以当前薪资，然后乘以100来获得百分比增长。"
+    },
+    "interpretation": {
+      "title": "涨幅解释",
+      "description": "薪资涨幅根据百分比增长进行分类：0%（无涨幅）、1-5%（低涨幅）、5-10%（中等涨幅）、10-20%（良好涨幅）、20-30%（优秀涨幅）和30%+（卓越涨幅）。"
+    },
+    "importance": {
+      "title": "为什么薪资涨幅计算器很重要",
+      "description": "薪资涨幅计算器帮助员工和雇主了解薪资调整的影响。它通过量化百分比增长及其货币价值，为薪资谈判、绩效评估和财务规划提供清晰度。"
+    }
+  }
+} 

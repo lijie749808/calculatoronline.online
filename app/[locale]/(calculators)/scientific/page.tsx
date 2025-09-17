@@ -62,15 +62,15 @@ function QuickActions({ t }: { t: any }) {
       </CardHeader>
       <CardContent className="space-y-3">
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/graphing">
-            <Icon name="RiLineChartLine" className="mr-2 size-4" />
-            {t.sidebar.quickActions.graphing}
+          <a href="/grade">
+            <Icon name="RiMedalLine" className="mr-2 size-4" />
+            {t.sidebar.quickActions.grade}
           </a>
         </Button>
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/matrix">
-            <Icon name="RiGridLine" className="mr-2 size-4" />
-            {t.sidebar.quickActions.matrix}
+          <a href="/mortgage">
+            <Icon name="RiMoneyDollarCircleLine" className="mr-2 size-4" />
+            {t.sidebar.quickActions.mortgage}
           </a>
         </Button>
         <Button variant="outline" className="w-full justify-start" asChild>

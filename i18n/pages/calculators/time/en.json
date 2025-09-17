@@ -1,0 +1,172 @@
+{
+  "seo": {
+    "title": "Time Calculator | Add Subtract Time - Hours Minutes Seconds Calculator Online",
+    "description": "Free online time calculator to add or subtract time values. Calculate time differences, add time to dates, and solve complex time expressions with days, hours, minutes, and seconds.",
+    "keywords": "time calculator, add time, subtract time, time arithmetic, hours calculator, minutes calculator, time difference, date time calculator"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "calculators": "Calculators", 
+    "current": "Time Calculator"
+  },
+  "header": {
+    "title": "Time Calculator",
+    "description": "Perform time arithmetic operations including addition, subtraction, and complex expressions. Calculate time differences, add or subtract time from dates, and solve time-based problems."
+  },
+  "calculator": {
+    "title": "Time Calculator",
+    "description": "Choose from three calculation modes: basic time arithmetic, date/time calculations, or complex time expressions.",
+    "tabs": {
+      "basic": "Basic Time Math",
+      "datetime": "Date & Time",
+      "expression": "Expression"
+    },
+    "basic": {
+      "title": "Time Addition & Subtraction",
+      "time1": "First Time Value",
+      "time2": "Second Time Value",
+      "calculate": "Calculate",
+      "clear": "Clear",
+      "result": "Result"
+    },
+    "datetime": {
+      "title": "Add or Subtract Time from Date",
+      "startDate": "Start Date",
+      "startTime": "Start Time",
+      "timeValue": "Time to Add/Subtract",
+      "calculate": "Calculate New Date & Time",
+      "result": "Result"
+    },
+    "expression": {
+      "title": "Time Calculator Expression",
+      "input": "Time Expression",
+      "calculate": "Calculate Expression",
+      "result": "Result",
+      "help": "Use d (days), h (hours), m (minutes), s (seconds). Example: 1d 2h 30m + 45m - 15s",
+      "examples": {
+        "title": "Examples"
+      }
+    }
+  },
+  "howToUse": {
+    "title": "How to Use the Time Calculator",
+    "basicOperations": {
+      "title": "Basic Time Operations",
+      "items": [
+        "Enter time values using days, hours, minutes, and seconds",
+        "Select addition (+) or subtraction (-) operation",
+        "Click Calculate to see the result",
+        "Results automatically handle overflow (e.g., 70 minutes becomes 1h 10m)"
+      ]
+    },
+    "dateTimeOperations": {
+      "title": "Date & Time Calculations",
+      "items": [
+        "Set a starting date and time",
+        "Enter the amount of time to add or subtract",
+        "Get the exact resulting date and time",
+        "Useful for scheduling and deadline calculations"
+      ]
+    },
+    "expressionSyntax": {
+      "title": "Expression Syntax",
+      "description": "Use mathematical expressions with time units for complex calculations:",
+      "examples": [
+        {
+          "expression": "2h 30m + 1h 15m",
+          "description": "Basic addition"
+        },
+        {
+          "expression": "1d 12h - 6h 30m",
+          "description": "Mixed units subtraction"
+        },
+        {
+          "expression": "3600s + 2h - 30m",
+          "description": "Seconds conversion"
+        },
+        {
+          "expression": "5d + 12h + 30m",
+          "description": "Multiple additions"
+        }
+      ]
+    }
+  },
+  "about": {
+    "title": "About Time Calculations",
+    "timeUnits": {
+      "title": "Time Units",
+      "units": [
+        { "name": "Second", "value": "Base unit" },
+        { "name": "Minute", "value": "60 seconds" },
+        { "name": "Hour", "value": "60 minutes" },
+        { "name": "Day", "value": "24 hours" },
+        { "name": "Week", "value": "7 days" },
+        { "name": "Month", "value": "~30.44 days" }
+      ]
+    },
+    "applications": {
+      "title": "Common Applications",
+      "items": [
+        "Project time tracking and management",
+        "Calculating work hours and overtime",
+        "Travel time planning and scheduling",
+        "Cooking and baking time calculations",
+        "Exercise and workout duration planning",
+        "Event planning and timeline creation"
+      ]
+    },
+    "precision": {
+      "title": "Calculation Precision",
+      "description": "Our time calculator handles precise arithmetic with automatic unit conversion. All calculations maintain accuracy down to the second level, with proper handling of time overflow and negative results."
+    }
+  },
+  "sidebar": {
+    "quickActions": {
+      "title": "Quick Actions",
+      "age": "Age Calculator",
+      "scientific": "Scientific Calculator", 
+      "allCalculators": "All Calculators"
+    },
+    "relatedCalculators": {
+      "title": "Related Calculators",
+      "items": [
+        {
+          "title": "BMI Calculator",
+          "url": "/bmi",
+          "icon": "RiHeartPulseLine"
+        },
+        {
+          "title": "Mortgage Calculator",
+          "url": "/mortgage",
+          "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "Break Even ROAS Calculator",
+          "url": "/break-even-roas",
+          "icon": "RiTrendingUpLine"
+        },
+        {
+          "title": "Salary Hike Calculator",
+          "url": "/salary-hike",
+          "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "Grade Calculator",
+          "url": "/grade",
+          "icon": "RiMedalLine"
+        }
+      ]
+    },
+    "features": {
+      "title": "Calculator Features",
+      "items": [
+        "Basic time addition and subtraction",
+        "Date and time calculations",
+        "Complex expression parsing",
+        "Automatic unit conversion",
+        "Negative time handling",
+        "Multiple input formats"
+      ]
+    }
+  }
+}

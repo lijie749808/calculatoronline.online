@@ -20,37 +20,37 @@
   "sidebar": {
     "quickActions": {
       "title": "快速操作",
-      "loan": "贷款计算器",
-      "amortization": "还款计划表",
+      "breakEvenRoas": "收支平衡ROAS计算器",
+      "salaryHike": "薪资涨幅计算器",
       "allCalculators": "所有计算器"
     },
     "relatedCalculators": {
       "title": "相关计算器",
       "items": [
         {
-          "title": "贷款计算器",
-          "url": "/loan",
-          "icon": "RiMoneyDollarCircleLine"
+          "title": "科学计算器",
+          "url": "/scientific",
+          "icon": "RiFunctionLine"
         },
         {
-          "title": "还款计划表",
-          "url": "/amortization",
-          "icon": "RiTableLine"
+          "title": "BMI计算器",
+          "url": "/bmi",
+          "icon": "RiHeartPulseLine"
         },
         {
-          "title": "利息计算器",
-          "url": "/interest",
-          "icon": "RiPercentLine"
+          "title": "年龄计算器",
+          "url": "/age",
+          "icon": "RiCalendarLine"
         },
         {
-          "title": "还款计算器",
-          "url": "/payment",
-          "icon": "RiCalculatorLine"
+          "title": "时间计算器",
+          "url": "/time",
+          "icon": "RiTimeLine"
         },
         {
-          "title": "再融资计算器",
-          "url": "/refinance",
-          "icon": "RiExchangeLine"
+          "title": "成绩计算器",
+          "url": "/grade",
+          "icon": "RiMedalLine"
         }
       ]
     },

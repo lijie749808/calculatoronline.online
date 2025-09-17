@@ -1,0 +1,123 @@
+{
+  "seo": {
+    "title": "BMI计算器 - 免费在线BMI计算器",
+    "description": "免费BMI计算器，计算您的身体质量指数。查看您的BMI分类和健康体重范围。",
+    "keywords": "bmi计算器, 身体质量指数计算器, bmi图表, 体重计算器, 健康计算器"
+  },
+  "breadcrumb": {
+    "home": "首页",
+    "calculators": "计算器",
+    "current": "BMI计算器"
+  },
+  "header": {
+    "title": "BMI计算器",
+    "description": "计算您的身体质量指数(BMI)来评估体重状况。获取您的BMI分类和健康体重范围。"
+  },
+  "calculator": {
+    "title": "BMI计算器",
+    "description": "输入您的体重和身高来计算BMI和健康体重范围"
+  },
+  "sidebar": {
+    "quickActions": {
+      "title": "快速操作",
+      "age": "年龄计算器",
+      "scientific": "科学计算器",
+      "allCalculators": "所有计算器"
+    },
+    "relatedCalculators": {
+      "title": "相关计算器",
+      "items": [
+        {
+          "title": "房贷计算器",
+          "url": "/mortgage",
+          "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "收支平衡ROAS计算器",
+          "url": "/break-even-roas",
+          "icon": "RiTrendingUpLine"
+        },
+        {
+          "title": "薪资涨幅计算器",
+          "url": "/salary-hike",
+          "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "时间计算器",
+          "url": "/time",
+          "icon": "RiTimeLine"
+        },
+        {
+          "title": "成绩计算器",
+          "url": "/grade",
+          "icon": "RiMedalLine"
+        }
+      ]
+    },
+    "features": {
+      "title": "计算器特性",
+      "items": [
+        "公制和英制单位的BMI计算",
+        "BMI分类",
+        "健康体重范围计算",
+        "实时计算",
+        "颜色编码的BMI分类",
+        "结果复制到剪贴板"
+      ]
+    }
+  },
+  "howToUse": {
+    "title": "如何使用BMI计算器",
+    "inputFields": {
+      "title": "输入字段",
+      "items": [
+        "选择您偏好的单位系统（公制或英制）",
+        "输入您当前的体重（公斤或磅）",
+        "输入您的身高（厘米或英寸）",
+        "计算器将自动更新您的BMI结果"
+      ]
+    },
+    "calculations": {
+      "title": "计算",
+      "items": [
+        {
+          "type": "BMI公式",
+          "description": "BMI = 体重(kg) / 身高(m)² 或 体重(lbs) / 身高(in)² × 703"
+        },
+        {
+          "type": "BMI分类",
+          "description": "体重不足、正常体重、超重和肥胖分类"
+        },
+        {
+          "type": "健康体重范围",
+          "description": "基于BMI 18.5-24.9的推荐体重范围"
+        }
+      ]
+    },
+    "tips": {
+      "title": "准确结果的提示",
+      "items": [
+        "测量身高时不穿鞋",
+        "空腹时在早晨称重",
+        "使用一致的单位（公制或英制）",
+        "BMI是筛查工具，不是诊断措施",
+        "咨询医疗专业人员获取个性化建议"
+      ]
+    }
+  },
+  "bmiPrinciples": {
+    "title": "BMI原理",
+    "formula": {
+      "title": "BMI公式",
+      "description": "BMI通过将体重（公斤）除以身高（米）的平方来计算。对于英制单位，公式使用转换因子703进行调整。"
+    },
+    "categories": {
+      "title": "BMI分类",
+      "description": "BMI分类帮助分类体重状况：体重不足(BMI < 18.5)、正常体重(BMI 18.5-24.9)、超重(BMI 25.0-29.9)和肥胖(BMI ≥ 30.0)，肥胖还有进一步的分类。"
+    },
+    "limitations": {
+      "title": "BMI局限性",
+      "description": "BMI不区分肌肉和脂肪质量，所以运动员可能BMI较高但仍然健康。它也不考虑年龄、性别、种族或身体成分。BMI最好作为筛查工具与其他健康评估一起使用。"
+    }
+  }
+} 

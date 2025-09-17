@@ -1,0 +1,185 @@
+{
+  "seo": {
+    "title": "成绩计算器 | 课程成绩与期末考试成绩计算器在线免费",
+    "description": "免费在线成绩计算器，基于加权平均计算课程成绩。计算期末考试需要达到的成绩来实现您的目标课程成绩。",
+    "keywords": "成绩计算器, 课程成绩, 期末考试计算器, 加权平均, GPA计算器, 字母成绩, 百分比成绩"
+  },
+  "breadcrumb": {
+    "home": "首页",
+    "calculators": "计算器", 
+    "current": "成绩计算器"
+  },
+  "header": {
+    "title": "成绩计算器",
+    "description": "基于加权平均计算您的课程成绩，并确定期末考试需要达到的成绩来实现您的目标课程成绩。"
+  },
+  "calculator": {
+    "title": "成绩计算器",
+    "description": "选择课程成绩计算或期末考试成绩规划。",
+    "tabs": {
+      "course": "课程成绩",
+      "final": "期末成绩"
+    },
+    "course": {
+      "title": "课程成绩计算器",
+      "assignments": "作业与考试",
+      "addAssignment": "添加作业",
+      "assignmentName": "作业名称",
+      "gradeType": "成绩类型",
+      "grade": "成绩",
+      "weight": "权重 (%)",
+      "calculate": "计算成绩",
+      "clear": "清除全部",
+      "finalGrade": "最终课程成绩",
+      "gradeScale": "成绩等级参考"
+    },
+    "final": {
+      "title": "期末考试成绩计算器",
+      "currentGrade": "当前成绩 (%)",
+      "desiredGrade": "目标成绩 (%)",
+      "finalWeight": "期末考试权重 (%)",
+      "calculate": "计算所需期末成绩",
+      "requiredGrade": "所需期末考试成绩",
+      "impossible": "此目标可能无法实现",
+      "alreadyAchieved": "您已经实现了目标！",
+      "achievable": "通过努力可以实现此目标！",
+      "tips": {
+        "title": "提示",
+        "tip1": "输入您在课程中的当前平均成绩",
+        "tip2": "设置您期望的课程最终成绩",
+        "tip3": "输入期末考试的权重（百分比）",
+        "tip4": "计算器将显示您期末考试需要的成绩"
+      }
+    }
+  },
+  "howToUse": {
+    "title": "如何使用成绩计算器",
+    "courseCalculator": {
+      "title": "课程成绩计算器",
+      "items": [
+        "添加作业、考试和其他评分项目",
+        "选择百分比（0-100）或字母成绩（A+到F）",
+        "输入每项作业的权重百分比",
+        "点击'计算成绩'查看您的加权平均分",
+        "使用'+'按钮根据需要添加更多作业"
+      ]
+    },
+    "finalCalculator": {
+      "title": "期末考试计算器",
+      "items": [
+        "输入您在课程中的当前成绩",
+        "设置您期望的最终成绩目标",
+        "输入期末考试占总成绩的百分比",
+        "获得期末考试所需的确切成绩"
+      ]
+    },
+    "gradeTypes": {
+      "title": "成绩输入类型",
+      "description": "计算器支持百分比和字母成绩：",
+      "examples": [
+        {
+          "type": "百分比成绩",
+          "description": "输入0-100的数字（例如：85, 92.5）"
+        },
+        {
+          "type": "字母成绩",
+          "description": "从A+到F等级中选择，自动转换"
+        },
+        {
+          "type": "混合成绩",
+          "description": "为不同作业使用不同的成绩类型"
+        },
+        {
+          "type": "加权平均",
+          "description": "每项作业根据其权重贡献成绩"
+        }
+      ]
+    }
+  },
+  "about": {
+    "title": "关于成绩计算",
+    "gradingSystem": {
+      "title": "成绩系统",
+      "description": "不同机构使用各种成绩等级。我们的计算器使用标准美式成绩系统：",
+      "scales": [
+        { "name": "A+ 等级", "range": "97-100% (GPA: 4.3)" },
+        { "name": "A 等级", "range": "93-96% (GPA: 4.0)" },
+        { "name": "A- 等级", "range": "90-92% (GPA: 3.7)" },
+        { "name": "B+ 等级", "range": "87-89% (GPA: 3.3)" },
+        { "name": "B 等级", "range": "83-86% (GPA: 3.0)" },
+        { "name": "B- 等级", "range": "80-82% (GPA: 2.7)" },
+        { "name": "C+ 等级", "range": "77-79% (GPA: 2.3)" },
+        { "name": "C 等级", "range": "73-76% (GPA: 2.0)" },
+        { "name": "C- 等级", "range": "70-72% (GPA: 1.7)" },
+        { "name": "D+ 等级", "range": "67-69% (GPA: 1.3)" },
+        { "name": "D 等级", "range": "63-66% (GPA: 1.0)" },
+        { "name": "D- 等级", "range": "60-62% (GPA: 0.7)" },
+        { "name": "F 等级", "range": "0-59% (GPA: 0.0)" }
+      ]
+    },
+    "weightedGrades": {
+      "title": "加权平均计算",
+      "description": "加权成绩为不同作业分配不同的重要性级别。例如，如果考试占60%，作业占40%，计算器会在确定最终成绩时更重视您的考试分数。"
+    },
+    "applications": {
+      "title": "常见用途",
+      "items": [
+        "基于已完成作业计算当前课程成绩",
+        "规划即将到来的作业需要的成绩",
+        "确定达到成绩目标所需的期末考试分数",
+        "跟踪整个学期的学术进展",
+        "比较不同的成绩情况和策略",
+        "在字母成绩和百分比分数之间转换"
+      ]
+    }
+  },
+  "sidebar": {
+    "quickActions": {
+      "title": "快捷操作",
+      "age": "年龄计算器",
+      "bmi": "BMI计算器", 
+      "allCalculators": "所有计算器"
+    },
+    "relatedCalculators": {
+      "title": "相关计算器",
+      "items": [
+        {
+          "title": "科学计算器",
+          "url": "/scientific",
+          "icon": "RiFunctionLine"
+        },
+        {
+          "title": "房贷计算器",
+          "url": "/mortgage",
+          "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "收支平衡ROAS计算器",
+          "url": "/break-even-roas",
+          "icon": "RiTrendingUpLine"
+        },
+        {
+          "title": "薪资涨幅计算器",
+          "url": "/salary-hike",
+          "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "时间计算器",
+          "url": "/time",
+          "icon": "RiTimeLine"
+        }
+      ]
+    },
+    "features": {
+      "title": "计算器特点",
+      "items": [
+        "加权平均计算",
+        "字母成绩到百分比转换",
+        "GPA计算和显示",
+        "期末考试成绩规划",
+        "多项作业支持",
+        "实时成绩更新"
+      ]
+    }
+  }
+}

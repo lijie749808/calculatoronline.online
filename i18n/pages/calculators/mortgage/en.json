@@ -20,37 +20,37 @@
   "sidebar": {
     "quickActions": {
       "title": "Quick Actions",
-      "loan": "Loan Calculator",
-      "amortization": "Amortization Schedule",
+      "breakEvenRoas": "Break Even ROAS Calculator",
+      "salaryHike": "Salary Hike Calculator",
       "allCalculators": "All Calculators"
     },
     "relatedCalculators": {
       "title": "Related Calculators",
       "items": [
         {
-          "title": "Loan Calculator",
-          "url": "/loan",
-          "icon": "RiMoneyDollarCircleLine"
+          "title": "Scientific Calculator",
+          "url": "/scientific",
+          "icon": "RiFunctionLine"
         },
         {
-          "title": "Amortization Schedule",
-          "url": "/amortization",
-          "icon": "RiTableLine"
+          "title": "BMI Calculator",
+          "url": "/bmi",
+          "icon": "RiHeartPulseLine"
         },
         {
-          "title": "Interest Calculator",
-          "url": "/interest",
-          "icon": "RiPercentLine"
+          "title": "Age Calculator",
+          "url": "/age",
+          "icon": "RiCalendarLine"
         },
         {
-          "title": "Payment Calculator",
-          "url": "/payment",
-          "icon": "RiCalculatorLine"
+          "title": "Time Calculator",
+          "url": "/time",
+          "icon": "RiTimeLine"
         },
         {
-          "title": "Refinance Calculator",
-          "url": "/refinance",
-          "icon": "RiExchangeLine"
+          "title": "Grade Calculator",
+          "url": "/grade",
+          "icon": "RiMedalLine"
         }
       ]
     },

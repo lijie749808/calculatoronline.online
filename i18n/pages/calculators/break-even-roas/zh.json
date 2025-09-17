@@ -1,0 +1,124 @@
+{
+  "seo": {
+    "title": "收支平衡ROAS计算器 - 免费在线ROAS计算器",
+    "description": "免费收支平衡ROAS计算器，确定您的Facebook、TikTok或Snapchat广告是否盈利。支持VAT计算的收支平衡点计算。",
+    "keywords": "收支平衡roas计算器, roas计算器, facebook广告计算器, tiktok广告计算器, snapchat广告计算器, 广告投资回报率计算器"
+  },
+  "breadcrumb": {
+    "home": "首页",
+    "calculators": "计算器",
+    "current": "收支平衡ROAS计算器"
+  },
+  "header": {
+    "title": "收支平衡ROAS计算器",
+    "description": "计算您的收支平衡ROAS，确定您的Facebook、TikTok或Snapchat广告是否盈利。包含VAT计算以获得准确结果。"
+  },
+  "calculator": {
+    "title": "收支平衡ROAS计算器",
+    "description": "输入您的成本和收入来计算收支平衡ROAS和利润分析"
+  },
+  "sidebar": {
+    "quickActions": {
+      "title": "快速操作",
+      "mortgage": "房贷计算器",
+      "salaryHike": "薪资涨幅计算器",
+      "allCalculators": "所有计算器"
+    },
+    "relatedCalculators": {
+      "title": "相关计算器",
+      "items": [
+        {
+          "title": "科学计算器",
+          "url": "/scientific",
+          "icon": "RiFunctionLine"
+        },
+        {
+          "title": "BMI计算器",
+          "url": "/bmi",
+          "icon": "RiHeartPulseLine"
+        },
+        {
+          "title": "年龄计算器",
+          "url": "/age",
+          "icon": "RiCalendarLine"
+        },
+        {
+          "title": "时间计算器",
+          "url": "/time",
+          "icon": "RiTimeLine"
+        },
+        {
+          "title": "成绩计算器",
+          "url": "/grade",
+          "icon": "RiMedalLine"
+        }
+      ]
+    },
+    "features": {
+      "title": "计算器特性",
+      "items": [
+        "包含VAT的计算",
+        "多种成本类别",
+        "实时ROAS计算",
+        "利润率分析",
+        "ROAS解释指南",
+        "结果复制到剪贴板"
+      ]
+    }
+  },
+  "howToUse": {
+    "title": "如何使用收支平衡ROAS计算器",
+    "inputFields": {
+      "title": "输入字段",
+      "items": [
+        "输入每件产品的所有成本（商品成本、运费、交易费用、其他费用）",
+        "为每个成本类别选择适当的VAT税率",
+        "输入每件产品的收入",
+        "为您的收入选择VAT税率",
+        "计算器将自动计算您的收支平衡ROAS"
+      ]
+    },
+    "calculations": {
+      "title": "计算",
+      "items": [
+        {
+          "type": "收支平衡ROAS公式",
+          "description": "ROAS = 总收入 / (总收入 - 总成本)"
+        },
+        {
+          "type": "VAT计算",
+          "description": "净金额通过从总金额中扣除VAT来计算"
+        },
+        {
+          "type": "利润分析",
+          "description": "自动计算利润率和每件产品净利润"
+        }
+      ]
+    },
+    "tips": {
+      "title": "准确结果的提示",
+      "items": [
+        "包含与产品相关的所有成本",
+        "使用您所在地区的正确VAT税率",
+        "在平台费用之前输入收入",
+        "考虑所有交易成本（支付处理等）",
+        "当成本或价格变化时更新计算"
+      ]
+    }
+  },
+  "roasPrinciples": {
+    "title": "ROAS原理",
+    "formula": {
+      "title": "收支平衡ROAS公式",
+      "description": "收支平衡ROAS通过将总收入除以总收入与总成本之间的差值来计算。这给出了您的广告系列收支平衡的ROAS值。"
+    },
+    "interpretation": {
+      "title": "ROAS解释",
+      "description": "ROAS（广告支出回报率）衡量您在广告上每花费一美元赚取的收入。ROAS为1表示收支平衡，更高的值表示盈利，更低的值表示亏损。"
+    },
+    "importance": {
+      "title": "为什么收支平衡ROAS很重要",
+      "description": "了解您的收支平衡ROAS有助于确定您的广告系列是否盈利。您可以将其与Facebook、TikTok或Snapchat中的实际ROAS进行比较，以做出关于广告系列优化的明智决策。"
+    }
+  }
+} 

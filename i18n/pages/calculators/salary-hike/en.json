@@ -1,0 +1,123 @@
+{
+  "seo": {
+    "title": "Salary Hike Calculator - Free Online Salary Increase Calculator",
+    "description": "Free Salary Hike Calculator to calculate salary increase percentage and new salary. Find hike percentage by salary or calculate new salary by hike percentage.",
+    "keywords": "salary hike calculator, salary increase calculator, hike percentage calculator, salary raise calculator, pay raise calculator"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "calculators": "Calculators",
+    "current": "Salary Hike Calculator"
+  },
+  "header": {
+    "title": "Salary Hike Calculator",
+    "description": "Calculate your salary hike percentage and new salary. Find hike percentage by comparing current and new salary, or calculate new salary by entering hike percentage."
+  },
+  "calculator": {
+    "title": "Salary Hike Calculator",
+    "description": "Calculate salary hike percentage and new salary with our easy-to-use calculator"
+  },
+  "sidebar": {
+    "quickActions": {
+      "title": "Quick Actions",
+      "mortgage": "Mortgage Calculator",
+      "breakEvenRoas": "Break Even ROAS Calculator",
+      "allCalculators": "All Calculators"
+    },
+    "relatedCalculators": {
+      "title": "Related Calculators",
+      "items": [
+        {
+          "title": "Scientific Calculator",
+          "url": "/scientific",
+          "icon": "RiFunctionLine"
+        },
+        {
+          "title": "BMI Calculator",
+          "url": "/bmi",
+          "icon": "RiHeartPulseLine"
+        },
+        {
+          "title": "Age Calculator",
+          "url": "/age",
+          "icon": "RiCalendarLine"
+        },
+        {
+          "title": "Time Calculator",
+          "url": "/time",
+          "icon": "RiTimeLine"
+        },
+        {
+          "title": "Grade Calculator",
+          "url": "/grade",
+          "icon": "RiMedalLine"
+        }
+      ]
+    },
+    "features": {
+      "title": "Calculator Features",
+      "items": [
+        "Two calculation modes",
+        "Real-time calculations",
+        "Hike percentage analysis",
+        "Monthly and yearly breakdown",
+        "Quick hike buttons",
+        "Copy results to clipboard"
+      ]
+    }
+  },
+  "howToUse": {
+    "title": "How to Use the Salary Hike Calculator",
+    "inputFields": {
+      "title": "Input Fields",
+      "items": [
+        "Select calculation mode: Find New Salary by Hike Percentage or Find Hike Percentage by Salary",
+        "Enter your current salary amount",
+        "Enter hike percentage or new salary depending on the mode",
+        "The calculator will automatically calculate the results"
+      ]
+    },
+    "calculations": {
+      "title": "Calculations",
+      "items": [
+        {
+          "type": "Hike Percentage Formula",
+          "description": "Hike Percentage = (New Salary - Current Salary) / Current Salary × 100"
+        },
+        {
+          "type": "New Salary Formula",
+          "description": "New Salary = Current Salary × (1 + Hike Percentage / 100)"
+        },
+        {
+          "type": "Salary Increase",
+          "description": "Salary Increase = New Salary - Current Salary"
+        }
+      ]
+    },
+    "tips": {
+      "title": "Tips for Accurate Results",
+      "items": [
+        "Enter annual salary amounts for accurate calculations",
+        "Use the same currency for both current and new salary",
+        "Consider all components of your salary package",
+        "Use the quick hike buttons for common percentages",
+        "Compare different hike scenarios for better planning"
+      ]
+    }
+  },
+  "salaryHikePrinciples": {
+    "title": "Salary Hike Principles",
+    "formula": {
+      "title": "Salary Hike Formula",
+      "description": "The salary hike percentage is calculated by finding the difference between new and current salary, dividing by the current salary, and multiplying by 100 to get the percentage increase."
+    },
+    "interpretation": {
+      "title": "Hike Interpretation",
+      "description": "Salary hikes are categorized based on percentage increase: 0% (No Hike), 1-5% (Low Hike), 5-10% (Moderate Hike), 10-20% (Good Hike), 20-30% (Excellent Hike), and 30%+ (Exceptional Hike)."
+    },
+    "importance": {
+      "title": "Why Salary Hike Calculator is Important",
+      "description": "A Salary Hike Calculator helps employees and employers understand the impact of salary adjustments. It provides clarity for salary negotiations, performance reviews, and financial planning by quantifying the percentage increase and its monetary value."
+    }
+  }
+} 

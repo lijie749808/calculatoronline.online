@@ -20,37 +20,37 @@
   "sidebar": {
     "quickActions": {
       "title": "Quick Actions",
-      "graphing": "Graphing Calculator",
-      "matrix": "Matrix Calculator", 
+      "grade": "Grade Calculator",
+      "mortgage": "Mortgage Calculator", 
       "allCalculators": "All Calculators"
     },
     "relatedCalculators": {
       "title": "Related Calculators",
       "items": [
         {
-          "title": "Graphing Calculator",
-          "url": "/graphing",
-          "icon": "RiLineChartLine"
+          "title": "BMI Calculator",
+          "url": "/bmi",
+          "icon": "RiHeartPulseLine"
         },
         {
-          "title": "Matrix Calculator", 
-          "url": "/matrix",
-          "icon": "RiGridLine"
+          "title": "Age Calculator", 
+          "url": "/age",
+          "icon": "RiCalendarLine"
         },
         {
-          "title": "Equation Solver",
-          "url": "/equation-solver", 
-          "icon": "RiFunctionLine"
+          "title": "Time Calculator",
+          "url": "/time", 
+          "icon": "RiTimeLine"
         },
         {
-          "title": "Statistics Calculator",
-          "url": "/statistics",
-          "icon": "RiBarChartLine"
+          "title": "Break Even ROAS Calculator",
+          "url": "/break-even-roas",
+          "icon": "RiTrendingUpLine"
         },
         {
-          "title": "Percentage Calculator",
-          "url": "/percentage",
-          "icon": "RiPercentLine"
+          "title": "Salary Hike Calculator",
+          "url": "/salary-hike",
+          "icon": "RiMoneyDollarCircleLine"
         }
       ]
     },

@@ -1,0 +1,147 @@
+{
+  "seo": {
+    "title": "年龄计算器 | 计算您的准确年龄（年月日）- 计算器在线",
+    "description": "免费在线年龄计算器，精确计算您的年龄（年、月、日、小时、分钟、秒）。计算您今天的年龄或任意指定日期的年龄。",
+    "keywords": "年龄计算器, 计算年龄, 我多大了, 日期计算器, 生日计算器, 年月日计算, 准确年龄"
+  },
+  "breadcrumb": {
+    "home": "首页",
+    "calculators": "计算器", 
+    "current": "年龄计算器"
+  },
+  "header": {
+    "title": "年龄计算器",
+    "description": "精确计算您的年龄（年、月、日等多种格式）。查看您今天或任意指定日期的年龄，以及生日倒计时信息。"
+  },
+  "calculator": {
+    "title": "年龄计算器",
+    "description": "输入您的出生日期和要计算年龄的日期。计算器将以多种格式显示您的准确年龄。",
+    "form": {
+      "title": "日期输入",
+      "birthDate": "出生日期",
+      "targetDate": "计算到日期",
+      "calculate": "计算年龄",
+      "clear": "清除"
+    },
+    "results": {
+      "mainTitle": "您的年龄",
+      "years": "岁",
+      "months": "个月", 
+      "days": "天",
+      "born": "出生于",
+      "detailsTitle": "详细信息",
+      "totalDays": "总天数",
+      "totalWeeks": "总周数",
+      "totalHours": "总小时数",
+      "totalMinutes": "总分钟数",
+      "totalSeconds": "总秒数",
+      "secondsNote": "您已经活了这么多秒！",
+      "birthdayTitle": "生日信息",
+      "nextBirthday": "下次生日",
+      "daysLeft": "天后",
+      "happyBirthday": "生日快乐！"
+    }
+  },
+  "howToUse": {
+    "title": "如何使用年龄计算器",
+    "steps": {
+      "title": "基本步骤",
+      "items": [
+        "在第一个输入框中输入您的出生日期",
+        "选择您想要计算年龄的日期（默认为今天）",
+        "点击'计算年龄'查看您的准确年龄",
+        "查看以多种时间单位显示的详细信息"
+      ]
+    },
+    "features": {
+      "title": "功能特点",
+      "items": [
+        "计算准确的年龄（年、月、日）",
+        "显示总天数、周数、小时数、分钟数和秒数",
+        "显示距离下次生日的天数",
+        "显示您出生时是星期几",
+        "可计算任意指定日期的年龄"
+      ]
+    },
+    "tips": {
+      "title": "使用技巧",
+      "items": [
+        "使用目标日期字段计算特定日期的年龄",
+        "适合规划重要生日庆典",
+        "适用于需要准确年龄的官方文件",
+        "满足对时间流逝的好奇心"
+      ]
+    }
+  },
+  "about": {
+    "title": "关于年龄计算",
+    "accuracy": {
+      "title": "计算精度",
+      "description": "我们的年龄计算器使用精确的日期运算来计算您的出生日期和目标日期之间的确切时间差。它会考虑闰年和不同月份的天数，以提供准确的结果。"
+    },
+    "applications": {
+      "title": "常见应用",
+      "items": [
+        "官方文件和表格填写",
+        "医疗记录和预约",
+        "法律要求和合同",
+        "教育入学申请",
+        "保险申请",
+        "个人好奇和兴趣"
+      ]
+    },
+    "calculations": {
+      "title": "工作原理",
+      "description": "计算器通过分别计算年、月、日的差值来计算两个日期之间的差异。然后将这些信息转换为各种时间单位（如小时、分钟和秒），以提供全面的年龄表示。"
+    }
+  },
+  "sidebar": {
+    "quickActions": {
+      "title": "快捷操作",
+      "scientific": "科学计算器",
+      "bmi": "BMI计算器", 
+      "allCalculators": "所有计算器"
+    },
+    "relatedCalculators": {
+      "title": "相关计算器",
+      "items": [
+        {
+          "title": "时间计算器",
+          "url": "/time",
+          "icon": "RiTimeLine"
+        },
+        {
+          "title": "房贷计算器",
+          "url": "/mortgage",
+          "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "收支平衡ROAS计算器",
+          "url": "/break-even-roas",
+          "icon": "RiTrendingUpLine"
+        },
+        {
+          "title": "薪资涨幅计算器",
+          "url": "/salary-hike",
+          "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "成绩计算器",
+          "url": "/grade",
+          "icon": "RiMedalLine"
+        }
+      ]
+    },
+    "features": {
+      "title": "计算器特点",
+      "items": [
+        "精确的年龄计算",
+        "多种时间单位显示",
+        "生日倒计时",
+        "星期信息显示",
+        "简洁直观的界面",
+        "移动设备友好"
+      ]
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import MortgageCalculator from "@/components/calculators/mortgage-calculator";
+import BMICalculator from "@/components/calculators/bmi-calculator";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -7,10 +7,10 @@ import Icon from "@/components/icon";
 
 async function getTranslations(locale: string) {
   try {
-    const translations = await import(`@/i18n/pages/calculators/mortgage/${locale}.json`);
+    const translations = await import(`@/i18n/pages/calculators/bmi/${locale}.json`);
     return translations.default;
   } catch {
-    const fallback = await import(`@/i18n/pages/calculators/mortgage/en.json`);
+    const fallback = await import(`@/i18n/pages/calculators/bmi/en.json`);
     return fallback.default;
   }
 }
@@ -23,9 +23,9 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations(locale);
   
-  let canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/mortgage`;
+  let canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/bmi`;
   if (locale !== "en") {
-    canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/mortgage`;
+    canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/bmi`;
   }
 
   return {
@@ -60,15 +60,15 @@ function QuickActions({ t }: { t: Record<string, any> }) {
       </CardHeader>
       <CardContent className="space-y-3">
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/break-even-roas">
-            <Icon name="RiTrendingUpLine" className="mr-2 size-4" />
-            {t.sidebar.quickActions.breakEvenRoas}
+          <a href="/age">
+            <Icon name="RiCalendarLine" className="mr-2 size-4" />
+            {t.sidebar.quickActions.age}
           </a>
         </Button>
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/salary-hike">
-            <Icon name="RiMoneyDollarCircleLine" className="mr-2 size-4" />
-            {t.sidebar.quickActions.salaryHike}
+          <a href="/scientific">
+            <Icon name="RiFunctionLine" className="mr-2 size-4" />
+            {t.sidebar.quickActions.scientific}
           </a>
         </Button>
         <Button variant="outline" className="w-full justify-start" asChild>
@@ -132,7 +132,7 @@ function CalculatorFeatures({ t }: { t: Record<string, any> }) {
   );
 }
 
-export default async function MortgageCalculatorPage({
+export default async function BMICalculatorPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -160,7 +160,7 @@ export default async function MortgageCalculatorPage({
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Icon name="RiHomeLine" className="size-6 text-primary" />
+                  <Icon name="RiHeartPulseLine" className="size-6 text-primary" />
                   {t.calculator.title}
                 </CardTitle>
                 <CardDescription>
@@ -168,7 +168,7 @@ export default async function MortgageCalculatorPage({
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <MortgageCalculator />
+                <BMICalculator />
               </CardContent>
             </Card>
 
@@ -213,34 +213,34 @@ export default async function MortgageCalculatorPage({
               </CardContent>
             </Card>
 
-            {/* Mortgage Principles */}
+            {/* BMI Principles */}
             <Card className="mt-8">
               <CardHeader>
-                <CardTitle>{t.mortgagePrinciples.title}</CardTitle>
+                <CardTitle>{t.bmiPrinciples.title}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <h3 className="font-semibold mb-2">{t.mortgagePrinciples.monthlyPayment.title}</h3>
+                  <h3 className="font-semibold mb-2">{t.bmiPrinciples.formula.title}</h3>
                   <p className="text-muted-foreground">
-                    {t.mortgagePrinciples.monthlyPayment.description}
+                    {t.bmiPrinciples.formula.description}
                   </p>
                 </div>
 
                 <Separator />
 
                 <div>
-                  <h3 className="font-semibold mb-2">{t.mortgagePrinciples.interest.title}</h3>
+                  <h3 className="font-semibold mb-2">{t.bmiPrinciples.categories.title}</h3>
                   <p className="text-muted-foreground">
-                    {t.mortgagePrinciples.interest.description}
+                    {t.bmiPrinciples.categories.description}
                   </p>
                 </div>
 
                 <Separator />
 
                 <div>
-                  <h3 className="font-semibold mb-2">{t.mortgagePrinciples.amortization.title}</h3>
+                  <h3 className="font-semibold mb-2">{t.bmiPrinciples.limitations.title}</h3>
                   <p className="text-muted-foreground">
-                    {t.mortgagePrinciples.amortization.description}
+                    {t.bmiPrinciples.limitations.description}
                   </p>
                 </div>
               </CardContent>

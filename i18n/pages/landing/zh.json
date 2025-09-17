@@ -61,46 +61,6 @@
     "show_happy_users": true,
     "show_badge": false
   },
-  "branding": {
-    "title": "深受学生、专业人士和企业信赖",
-    "items": [
-      {
-        "title": "学生",
-        "image": {
-          "src": "/imgs/logos/nextjs.svg",
-          "alt": "学生"
-        }
-      },
-      {
-        "title": "工程师",
-        "image": {
-          "src": "/imgs/logos/react.svg",
-          "alt": "工程师"
-        }
-      },
-      {
-        "title": "会计师",
-        "image": {
-          "src": "/imgs/logos/tailwindcss.svg",
-          "alt": "会计师"
-        }
-      },
-      {
-        "title": "研究员",
-        "image": {
-          "src": "/imgs/logos/shadcn.svg",
-          "alt": "研究员"
-        }
-      },
-      {
-        "title": "企业",
-        "image": {
-          "src": "/imgs/logos/vercel.svg",
-          "alt": "企业"
-        }
-      }
-    ]
-  },
 
   "feature": {
     "name": "feature",
@@ -116,26 +76,6 @@
             "title": "科学计算器",
             "url": "/scientific",
             "target": "_self"
-          },
-          {
-            "title": "图形计算器",
-            "url": "/graphing",
-            "target": "_self"
-          },
-          {
-            "title": "方程求解器",
-            "url": "/equation-solver",
-            "target": "_self"
-          },
-          {
-            "title": "矩阵计算器",
-            "url": "/matrix",
-            "target": "_self"
-          },
-          {
-            "title": "统计计算器",
-            "url": "/statistics",
-            "target": "_self"
           }
         ]
       },
@@ -150,28 +90,13 @@
             "target": "_self"
           },
           {
-            "title": "贷款计算器",
-            "url": "/loan",
+            "title": "收支平衡ROAS计算器",
+            "url": "/break-even-roas",
             "target": "_self"
           },
           {
-            "title": "投资计算器",
-            "url": "/investment",
-            "target": "_self"
-          },
-          {
-            "title": "税收计算器",
-            "url": "/tax",
-            "target": "_self"
-          },
-          {
-            "title": "退休计算器",
-            "url": "/retirement",
-            "target": "_self"
-          },
-          {
-            "title": "复利计算器",
-            "url": "/compound-interest",
+            "title": "薪资涨幅计算器",
+            "url": "/salary-hike",
             "target": "_self"
           }
         ]
@@ -185,111 +110,34 @@
             "title": "BMI计算器",
             "url": "/bmi",
             "target": "_self"
-          },
-          {
-            "title": "卡路里计算器",
-            "url": "/calorie",
-            "target": "_self"
-          },
-          {
-            "title": "体脂计算器",
-            "url": "/body-fat",
-            "target": "_self"
-          },
-          {
-            "title": "怀孕计算器",
-            "url": "/pregnancy",
-            "target": "_self"
-          }
-        ]
-      },
-      {
-        "title": "单位转换",
-        "description": "在不同测量单位之间转换 - 长度、重量、温度、货币等。",
-        "icon": "RiExchangeLine",
-        "children": [
-          {
-            "title": "长度转换器",
-            "url": "/length-converter",
-            "target": "_self"
-          },
-          {
-            "title": "重量转换器",
-            "url": "/weight-converter",
-            "target": "_self"
-          },
-          {
-            "title": "温度转换器",
-            "url": "/temperature-converter",
-            "target": "_self"
-          },
-          {
-            "title": "货币转换器",
-            "url": "/currency-converter",
-            "target": "_self"
-          },
-          {
-            "title": "面积转换器",
-            "url": "/area-converter",
-            "target": "_self"
           }
         ]
       },
       {
         "title": "日期与时间",
-        "description": "年龄计算器、日期差异、时区转换器和工作日计算器用于日程安排。",
+        "description": "年龄计算器、时间计算器和其他时间相关工具用于日程安排。",
         "icon": "RiCalendarLine",
         "children": [
           {
             "title": "年龄计算器",
-            "url": "/age-calculator",
+            "url": "/age",
             "target": "_self"
           },
           {
-            "title": "日期差异计算",
-            "url": "/date-difference",
-            "target": "_self"
-          },
-          {
-            "title": "时区转换器",
-            "url": "/timezone-converter",
+            "title": "时间计算器",
+            "url": "/time",
             "target": "_self"
           }
         ]
       },
       {
         "title": "专业工具",
-        "description": "GPA计算器、成绩计算器、小费计算器、密码生成器和其他实用计算器。",
+        "description": "成绩计算器和其他实用计算器。",
         "icon": "RiToolsLine",
         "children": [
           {
-            "title": "GPA计算器",
-            "url": "/gpa-calculator",
-            "target": "_self"
-          },
-          {
             "title": "成绩计算器",
-            "url": "/grade-calculator",
-            "target": "_self"
-          },
-          {
-            "title": "小费计算器",
-            "url": "/tip-calculator",
-            "target": "_self"
-          },
-          {
-            "title": "密码生成器",
-            "url": "/password-generator",
-            "target": "_self"
-          },
-          {
-            "title": "随机数生成器",
-            "url": "/random-number",
-            "target": "_self"
-          },
-          {
-            "title": "百分比计算器",
-            "url": "/percentage",
+            "url": "/grade",
             "target": "_self"
           }
         ]
@@ -446,18 +294,28 @@
           "title": "分类",
           "children": [
             {
-              "title": "数学计算器",
-              "url": "/math",
+              "title": "数学与科学",
+              "url": "/scientific",
               "target": "_self"
             },
             {
-              "title": "金融计算器",
-              "url": "/finance",
+              "title": "财务规划",
+              "url": "/mortgage",
               "target": "_self"
             },
             {
-              "title": "健康计算器",
-              "url": "/health",
+              "title": "健康与健身",
+              "url": "/bmi",
+              "target": "_self"
+            },
+            {
+              "title": "日期与时间",
+              "url": "/age",
+              "target": "_self"
+            },
+            {
+              "title": "专业工具",
+              "url": "/grade",
               "target": "_self"
             }
           ]
@@ -478,6 +336,21 @@
             {
               "title": "BMI计算器",
               "url": "/bmi",
+              "target": "_self"
+            },
+            {
+              "title": "年龄计算器",
+              "url": "/age",
+              "target": "_self"
+            },
+            {
+              "title": "收支平衡ROAS",
+              "url": "/break-even-roas",
+              "target": "_self"
+            },
+            {
+              "title": "薪资涨幅计算器",
+              "url": "/salary-hike",
               "target": "_self"
             }
           ]
