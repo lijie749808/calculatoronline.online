@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import AgeCalculator from "@/components/calculators/age-calculator";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import Icon from "@/components/icon";
 import { Link } from "@/i18n/routing";
@@ -130,60 +129,7 @@ function CalculatorFeatures({ t }: { t: Record<string, any> }) {
   );
 }
 
-function UsageGuide({ t }: { t: Record<string, any> }) {
-  const steps = t.usage.steps;
 
-  return (
-    <Card>
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <Icon name="RiQuestionLine" className="size-6 text-primary" />
-          {t.usage.title}
-        </CardTitle>
-        <CardDescription>{t.usage.description}</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <div className="space-y-4">
-          {steps.map((step: Record<string, string>, index: number) => (
-            <div key={index} className="flex gap-4">
-              <Badge variant="outline" className="size-8 rounded-full flex items-center justify-center flex-shrink-0">
-                {index + 1}
-              </Badge>
-              <div>
-                <h4 className="font-semibold mb-1">{step.title}</h4>
-                <p className="text-sm text-muted-foreground">{step.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </CardContent>
-    </Card>
-  );
-}
-
-function AboutAgeCalculation({ t }: { t: Record<string, any> }) {
-  return (
-    <Card>
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <Icon name="RiInformationLine" className="size-6 text-primary" />
-          {t.about.title}
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="prose prose-sm max-w-none dark:prose-invert">
-        <p>{t.about.description}</p>
-        <h4>{t.about.accuracy.title}</h4>
-        <p>{t.about.accuracy.description}</p>
-        <h4>{t.about.applications.title}</h4>
-        <ul>
-          {t.about.applications.list.map((item: string, index: number) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-      </CardContent>
-    </Card>
-  );
-}
 
 export default async function AgeCalculatorPage({
   params,

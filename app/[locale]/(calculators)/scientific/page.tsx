@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import Icon from "@/components/icon";
-import { useCalculatorTranslations } from "@/hooks/useCalculatorTranslations";
 
 async function getTranslations(locale: string) {
   try {
