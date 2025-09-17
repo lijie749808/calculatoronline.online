@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import Icon from "@/components/icon";
+import { Link } from "@/i18n/routing";
 
 async function getTranslations(locale: string) {
   try {
@@ -92,7 +93,7 @@ function RelatedCalculators({ t }: { t: Record<string, any> }) {
       </CardHeader>
       <CardContent>
         <div className="space-y-3">
-          {t.sidebar.relatedCalculators.items.map((calc: any, index: number) => (
+          {t.sidebar.relatedCalculators.items.map((calc: Record<string, string>, index: number) => (
             <Link
               key={index}
               href={calc.url}

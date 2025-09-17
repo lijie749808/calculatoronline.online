@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import Icon from "@/components/icon";
+import { Link } from "@/i18n/routing";
 
 async function getTranslations(locale: string) {
   try {
@@ -39,19 +40,19 @@ export async function generateMetadata({
   };
 }
 
-function NavigationBreadcrumb({ t }: { t: any }) {
+function NavigationBreadcrumb({ t }: { t: Record<string, any> }) {
   return (
     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
-      <a href="/" className="hover:text-primary">{t.breadcrumb.home}</a>
+      <Link href="/" className="hover:text-primary">{t.breadcrumb.home}</Link>
       <span>/</span>
-      <a href="/#feature" className="hover:text-primary">{t.breadcrumb.calculators}</a>
+      <Link href="/#feature" className="hover:text-primary">{t.breadcrumb.calculators}</Link>
       <span>/</span>
       <span>{t.breadcrumb.current}</span>
     </div>
   );
 }
 
-function QuickActions({ t }: { t: any }) {
+function QuickActions({ t }: { t: Record<string, any> }) {
   return (
     <Card>
       <CardHeader>
@@ -59,29 +60,29 @@ function QuickActions({ t }: { t: any }) {
       </CardHeader>
       <CardContent className="space-y-3">
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/age">
+          <Link href="/age">
             <Icon name="RiCalendarLine" className="mr-2 size-4" />
             {t.sidebar.quickActions.age}
-          </a>
+          </Link>
         </Button>
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/bmi">
+          <Link href="/bmi">
             <Icon name="RiHeartPulseLine" className="mr-2 size-4" />
             {t.sidebar.quickActions.bmi}
-          </a>
+          </Link>
         </Button>
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/#feature">
+          <Link href="/#feature">
             <Icon name="RiCalculatorLine" className="mr-2 size-4" />
             {t.sidebar.quickActions.allCalculators}
-          </a>
+          </Link>
         </Button>
       </CardContent>
     </Card>
   );
 }
 
-function RelatedCalculators({ t }: { t: any }) {
+function RelatedCalculators({ t }: { t: Record<string, any> }) {
   return (
     <Card>
       <CardHeader>
@@ -89,7 +90,7 @@ function RelatedCalculators({ t }: { t: any }) {
       </CardHeader>
       <CardContent>
         <div className="space-y-3">
-          {t.sidebar.relatedCalculators.items.map((calc: any, index: number) => (
+          {t.sidebar.relatedCalculators.items.map((calc: Record<string, string>, index: number) => (
             <a
               key={index}
               href={calc.url}
@@ -101,7 +102,7 @@ function RelatedCalculators({ t }: { t: any }) {
               <span className="text-sm font-medium group-hover:text-primary">
                 {calc.title}
               </span>
-            </a>
+            </Link>
           ))}
         </div>
       </CardContent>
@@ -109,7 +110,7 @@ function RelatedCalculators({ t }: { t: any }) {
   );
 }
 
-function CalculatorFeatures({ t }: { t: any }) {
+function CalculatorFeatures({ t }: { t: Record<string, any> }) {
   return (
     <Card>
       <CardHeader>
@@ -202,7 +203,7 @@ export default async function GradeCalculatorPage({
                   <div className="space-y-2 text-muted-foreground">
                     <p>{t.howToUse.gradeTypes.description}</p>
                     <div className="grid md:grid-cols-2 gap-2">
-                      {t.howToUse.gradeTypes.examples.map((example: any, index: number) => (
+                      {t.howToUse.gradeTypes.examples.map((example: Record<string, string>, index: number) => (
                         <div key={index} className="p-3 bg-muted/50 rounded">
                           <div className="font-medium text-sm">{example.type}</div>
                           <div className="text-xs text-muted-foreground">{example.description}</div>
@@ -226,7 +227,7 @@ export default async function GradeCalculatorPage({
                     {t.about.gradingSystem.description}
                   </p>
                   <div className="grid md:grid-cols-2 gap-4">
-                    {t.about.gradingSystem.scales.map((scale: any, index: number) => (
+                    {t.about.gradingSystem.scales.map((scale: Record<string, string>, index: number) => (
                       <div key={index} className="p-3 bg-muted/30 rounded">
                         <div className="font-medium">{scale.name}</div>
                         <div className="text-sm text-muted-foreground">{scale.range}</div>

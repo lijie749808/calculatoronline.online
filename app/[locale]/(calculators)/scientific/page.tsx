@@ -41,12 +41,12 @@ export async function generateMetadata({
 }
 
 // Client component for navigation links
-function NavigationBreadcrumb({ t }: { t: any }) {
+function NavigationBreadcrumb({ t }: { t: Record<string, any> }) {
   return (
     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
-      <a href="/" className="hover:text-primary">{t.breadcrumb.home}</a>
+      <Link href="/" className="hover:text-primary">{t.breadcrumb.home}</Link>
       <span>/</span>
-      <a href="/#feature" className="hover:text-primary">{t.breadcrumb.calculators}</a>
+      <Link href="/#feature" className="hover:text-primary">{t.breadcrumb.calculators}</Link>
       <span>/</span>
       <span>{t.breadcrumb.current}</span>
     </div>
@@ -54,7 +54,7 @@ function NavigationBreadcrumb({ t }: { t: any }) {
 }
 
 // Client component for quick actions
-function QuickActions({ t }: { t: any }) {
+function QuickActions({ t }: { t: Record<string, any> }) {
   return (
     <Card>
       <CardHeader>
@@ -62,22 +62,22 @@ function QuickActions({ t }: { t: any }) {
       </CardHeader>
       <CardContent className="space-y-3">
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/grade">
+          <Link href="/grade">
             <Icon name="RiMedalLine" className="mr-2 size-4" />
             {t.sidebar.quickActions.grade}
-          </a>
+          </Link>
         </Button>
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/mortgage">
+          <Link href="/mortgage">
             <Icon name="RiMoneyDollarCircleLine" className="mr-2 size-4" />
             {t.sidebar.quickActions.mortgage}
-          </a>
+          </Link>
         </Button>
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/#feature">
+          <Link href="/#feature">
             <Icon name="RiCalculatorLine" className="mr-2 size-4" />
             {t.sidebar.quickActions.allCalculators}
-          </a>
+          </Link>
         </Button>
       </CardContent>
     </Card>
@@ -85,7 +85,7 @@ function QuickActions({ t }: { t: any }) {
 }
 
 // Client component for related calculators
-function RelatedCalculators({ t }: { t: any }) {
+function RelatedCalculators({ t }: { t: Record<string, any> }) {
   return (
     <Card>
       <CardHeader>
@@ -93,8 +93,8 @@ function RelatedCalculators({ t }: { t: any }) {
       </CardHeader>
       <CardContent>
         <div className="space-y-3">
-          {t.sidebar.relatedCalculators.items.map((calc: any, index: number) => (
-            <a
+          {t.sidebar.relatedCalculators.items.map((calc: Record<string, string>, index: number) => (
+            <Link
               key={index}
               href={calc.url}
               className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors group"
@@ -105,7 +105,7 @@ function RelatedCalculators({ t }: { t: any }) {
               <span className="text-sm font-medium group-hover:text-primary">
                 {calc.title}
               </span>
-            </a>
+            </Link>
           ))}
         </div>
       </CardContent>
@@ -114,7 +114,7 @@ function RelatedCalculators({ t }: { t: any }) {
 }
 
 // Client component for features
-function CalculatorFeatures({ t }: { t: any }) {
+function CalculatorFeatures({ t }: { t: Record<string, any> }) {
   return (
     <Card>
       <CardHeader>
@@ -194,7 +194,7 @@ export default async function ScientificCalculatorPage({
                 <div>
                   <h3 className="font-semibold mb-2">{t.howToUse.advancedFunctions.title}</h3>
                   <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                    {t.howToUse.advancedFunctions.items.map((item: any, index: number) => (
+                    {t.howToUse.advancedFunctions.items.map((item: Record<string, string>, index: number) => (
                       <li key={index}>
                         <strong>{item.functions}:</strong> {item.description}
                       </li>

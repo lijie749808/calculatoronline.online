@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import Icon from "@/components/icon";
+import { Link } from "@/i18n/routing";
 
 async function getTranslations(locale: string) {
   try {
@@ -42,9 +43,9 @@ export async function generateMetadata({
 function NavigationBreadcrumb({ t }: { t: Record<string, any> }) {
   return (
     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
-      <a href="/" className="hover:text-primary">{t.breadcrumb.home}</a>
+      <Link href="/" className="hover:text-primary">{t.breadcrumb.home}</Link>
       <span>/</span>
-      <a href="/#feature" className="hover:text-primary">{t.breadcrumb.calculators}</a>
+      <Link href="/#feature" className="hover:text-primary">{t.breadcrumb.calculators}</Link>
       <span>/</span>
       <span>{t.breadcrumb.current}</span>
     </div>
@@ -60,22 +61,22 @@ function QuickActions({ t }: { t: Record<string, any> }) {
       </CardHeader>
       <CardContent className="space-y-3">
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/mortgage">
+          <Link href="/mortgage">
             <Icon name="RiMoneyDollarCircleLine" className="mr-2 size-4" />
             {t.sidebar.quickActions.mortgage}
-          </a>
+          </Link>
         </Button>
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/salary-hike">
+          <Link href="/salary-hike">
             <Icon name="RiTrendingUpLine" className="mr-2 size-4" />
             {t.sidebar.quickActions.salaryHike}
-          </a>
+          </Link>
         </Button>
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/#feature">
+          <Link href="/#feature">
             <Icon name="RiCalculatorLine" className="mr-2 size-4" />
             {t.sidebar.quickActions.allCalculators}
-          </a>
+          </Link>
         </Button>
       </CardContent>
     </Card>
@@ -91,7 +92,7 @@ function RelatedCalculators({ t }: { t: Record<string, any> }) {
       </CardHeader>
       <CardContent>
         <div className="space-y-3">
-          {t.sidebar.relatedCalculators.items.map((calc: any, index: number) => (
+          {t.sidebar.relatedCalculators.items.map((calc: Record<string, string>, index: number) => (
             <a
               key={index}
               href={calc.url}
@@ -103,7 +104,7 @@ function RelatedCalculators({ t }: { t: Record<string, any> }) {
               <span className="text-sm font-medium group-hover:text-primary">
                 {calc.title}
               </span>
-            </a>
+            </Link>
           ))}
         </div>
       </CardContent>

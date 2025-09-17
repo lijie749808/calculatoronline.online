@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import Icon from "@/components/icon";
+import { Link } from "@/i18n/routing";
 
 async function getTranslations(locale: string) {
   try {
@@ -39,19 +40,19 @@ export async function generateMetadata({
   };
 }
 
-function NavigationBreadcrumb({ t }: { t: any }) {
+function NavigationBreadcrumb({ t }: { t: Record<string, any> }) {
   return (
     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
-      <a href="/" className="hover:text-primary">{t.breadcrumb.home}</a>
+      <Link href="/" className="hover:text-primary">{t.breadcrumb.home}</Link>
       <span>/</span>
-      <a href="/#feature" className="hover:text-primary">{t.breadcrumb.calculators}</a>
+      <Link href="/#feature" className="hover:text-primary">{t.breadcrumb.calculators}</Link>
       <span>/</span>
       <span>{t.breadcrumb.current}</span>
     </div>
   );
 }
 
-function QuickActions({ t }: { t: any }) {
+function QuickActions({ t }: { t: Record<string, any> }) {
   return (
     <Card>
       <CardHeader>
@@ -59,29 +60,29 @@ function QuickActions({ t }: { t: any }) {
       </CardHeader>
       <CardContent className="space-y-3">
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/scientific">
+          <Link href="/scientific">
             <Icon name="RiFunctionLine" className="mr-2 size-4" />
             {t.sidebar.quickActions.scientific}
-          </a>
+          </Link>
         </Button>
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/bmi">
+          <Link href="/bmi">
             <Icon name="RiHeartLine" className="mr-2 size-4" />
             {t.sidebar.quickActions.bmi}
-          </a>
+          </Link>
         </Button>
         <Button variant="outline" className="w-full justify-start" asChild>
-          <a href="/#feature">
+          <Link href="/#feature">
             <Icon name="RiCalculatorLine" className="mr-2 size-4" />
             {t.sidebar.quickActions.allCalculators}
-          </a>
+          </Link>
         </Button>
       </CardContent>
     </Card>
   );
 }
 
-function RelatedCalculators({ t }: { t: any }) {
+function RelatedCalculators({ t }: { t: Record<string, any> }) {
   return (
     <Card>
       <CardHeader>
@@ -89,7 +90,7 @@ function RelatedCalculators({ t }: { t: any }) {
       </CardHeader>
       <CardContent>
         <div className="space-y-3">
-          {t.sidebar.relatedCalculators.items.map((calc: any, index: number) => (
+          {t.sidebar.relatedCalculators.items.map((calc: Record<string, string>, index: number) => (
             <a
               key={index}
               href={calc.url}
@@ -101,7 +102,7 @@ function RelatedCalculators({ t }: { t: any }) {
               <span className="text-sm font-medium group-hover:text-primary">
                 {calc.title}
               </span>
-            </a>
+            </Link>
           ))}
         </div>
       </CardContent>
@@ -109,7 +110,7 @@ function RelatedCalculators({ t }: { t: any }) {
   );
 }
 
-function CalculatorFeatures({ t }: { t: any }) {
+function CalculatorFeatures({ t }: { t: Record<string, any> }) {
   return (
     <Card>
       <CardHeader>
@@ -129,7 +130,7 @@ function CalculatorFeatures({ t }: { t: any }) {
   );
 }
 
-function UsageGuide({ t }: { t: any }) {
+function UsageGuide({ t }: { t: Record<string, any> }) {
   const steps = t.usage.steps;
 
   return (
@@ -143,7 +144,7 @@ function UsageGuide({ t }: { t: any }) {
       </CardHeader>
       <CardContent>
         <div className="space-y-4">
-          {steps.map((step: any, index: number) => (
+          {steps.map((step: Record<string, string>, index: number) => (
             <div key={index} className="flex gap-4">
               <Badge variant="outline" className="size-8 rounded-full flex items-center justify-center flex-shrink-0">
                 {index + 1}
@@ -160,7 +161,7 @@ function UsageGuide({ t }: { t: any }) {
   );
 }
 
-function AboutAgeCalculation({ t }: { t: any }) {
+function AboutAgeCalculation({ t }: { t: Record<string, any> }) {
   return (
     <Card>
       <CardHeader>
