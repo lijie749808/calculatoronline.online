@@ -91,7 +91,7 @@ function RelatedCalculators({ t }: { t: Record<string, any> }) {
       <CardContent>
         <div className="space-y-3">
           {t.sidebar.relatedCalculators.items.map((calc: Record<string, string>, index: number) => (
-            <a
+            <Link
               key={index}
               href={calc.url}
               className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors group"

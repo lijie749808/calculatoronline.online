@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Link from "next/link";
 import SalaryHikeCalculator from "@/components/calculators/salary-hike-calculator";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
